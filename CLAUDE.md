@@ -1,11 +1,11 @@
 # Distro L. Desk: landing page
 
-A single long-scroll, static, **beginner-first** guide to Linux in 2026 (19 sections in 5 chapters, see the page map in `content/landing.md`), in a **contemporary editorial** style: warm canvas, Geist + Instrument Serif accents + IBM Plex Mono labels, asymmetric compositions, real Linux desktop screenshots as the main visual, and a multi-select **Find your fit** recommender at its center (see `design.md` §17). Most visitors are non-technical: every section opens in plain language, with technical detail in a "Show the details" panel.
+A single long-scroll, static, **beginner-first** guide to Linux in 2026 (20 sections in 5 chapters, see the page map in `content/landing.md`). The direction: **a contemporary Linux desktop, presented with the precision of a premium software product** (GNOME as the reference; `design.md` §18). Real Linux desktop screenshots are the visual identity; Inter (400/600) with IBM Plex Mono only for technical labels; `#F8F9FA` background, `#202124` text, `#3584E4` accent. At the center is a multi-select **Find your Linux** recommender. Most visitors are non-technical: every section opens in plain language, with technical detail in a "Show the details" panel.
 
 ## Source files (read these before building)
-- `brand.md`: logo (`dLD.`), the editorial warm & blue palette, typefaces, image brief. Overrides `design.md` for color, type and logo.
-- `design.md`: visual system (tokens, shadows, components, layout, motion, accessibility). Follow it exactly.
-- **Figma file** (https://www.figma.com/design/Zb9Vh2RVRtl3UDGqXeXWdH): the approved visual design. The code implements it. Reference frames for the current direction: `02 Hero v4` and `03 Find your fit` (desktop 1440 + mobile 390). Frames marked `(old)` are superseded. Also present (new palette and fonts, older layouts, to be restyled): foundations, final logo, core components (keycap, button, readout, theme toggle, **Details toggle**), Hero (plain-language), What is Linux? (the section-opening + details pattern), Finder, and the distro card (closed and open). The remaining sections follow the same components and rules.
+- `brand.md`: logo (`dLD.`), palette, typefaces, and the screenshot brief with capture rules. Overrides `design.md` for color, type and logo.
+- `design.md`: visual system. **§18 is the current direction** (tokens, type, components, section recipes); earlier sections still cover accessibility and motion. Follow it exactly.
+- **Figma file** (https://www.figma.com/design/Zb9Vh2RVRtl3UDGqXeXWdH): the approved visual design. The code implements it. Reference frames for the current direction: `02 Hero v5`, `03 Desktops` and `04 Find your Linux v2` (desktop 1440 + mobile 390). Frames marked `(old)` are superseded. Never reconstruct a desktop in Figma or code: screenshot slots stay flat placeholders until the owner's real screenshots arrive (`brand.md` §6). Also present (older layouts, to be restyled to §18): foundations, final logo, core components (keycap, button, readout, theme toggle, **Details toggle**), Hero (plain-language), What is Linux? (the section-opening + details pattern), Finder, and the distro card (closed and open). The remaining sections follow the same components and rules.
   - **The site owner redesigns sections in Figma.** The Figma file is the source of truth for visuals. Frames are named `NN Section · Desktop 1440` / `· Mobile 390` using the page-map numbers. Build a section from Figma only when its frame name contains **"✓ Ready"**; otherwise use the existing frames and `design.md`. Never overwrite the owner's frames; add new frames next to them and ask first. The rules for editing are on the `00 Read me · How to redesign` board and in `design.md` §15.
   - If the owner changes wording in Figma, update `content/copy.md` to match before building (copy.md stays the text source for the code).
   - The Figma Starter plan allows one variable mode, so dark colors live in a separate `Color (Dark)` collection (`dark/*`). In code, both themes are CSS custom properties.
@@ -21,9 +21,9 @@ A single long-scroll, static, **beginner-first** guide to Linux in 2026 (19 sect
   index.html
   assets/css/tokens.css     # design.md tokens as CSS custom properties
   assets/css/main.css       # layout + components
-  assets/js/main.js         # theme toggle, distro tabs, Find your fit, timeline
+  assets/js/main.js         # theme toggle, Find your Linux, timeline
   data/distros.json         # distro facts + finder rules
-  assets/fonts/             # self-hosted Geist, Instrument Serif, IBM Plex Mono (woff2)
+  assets/fonts/             # self-hosted Inter (400, 600) and IBM Plex Mono (400), woff2
   assets/img/               # og-image.png, favicon.svg, screenshots
   ```
 - Run locally: `python3 -m http.server 8000`, then open http://localhost:8000

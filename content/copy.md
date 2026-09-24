@@ -31,9 +31,9 @@ This is the **approved, ready-to-publish text** for every part of the site. The 
 
 **`<title>` (home):** Distro L. Desk: a friendly, independent guide to Linux in 2026
 **Meta description:** New to Linux? A friendly, independent guide to choosing a version, checking your apps and games, and switching safely from Windows or macOS. Updated September 2026.
-**Open Graph title:** Give your computer a fresh start with Linux.
+**Open Graph title:** Meet your next operating system.
 **Open Graph description:** Pick a Linux version in three questions, check your apps and games, and switch step by step. Free, independent and sourced.
-**OG image alt:** The words "Give your computer a fresh start with Linux" on a soft blue-to-peach gradient, above a Linux desktop screenshot.
+**OG image alt:** The words "Meet your next operating system" above a screenshot of the Ubuntu desktop.
 
 **Skip link:** Skip to main content
 **Theme toggle (aria-label):** Switch between light and dark theme
@@ -51,124 +51,127 @@ This is the **approved, ready-to-publish text** for every part of the site. The 
 
 ## 1. Header and section index
 
-**Wordmark:** `dLD.` + two-line mono label: DISTRO L. DESK / THE FRIENDLY LINUX GUIDE
+**Logo:** `dLD.` (link to `#top`, `aria-label="Distro L. Desk, home"`)
 
 **Main navigation**
 | Label | Goes to |
 |---|---|
-| Explore | `#explore` (chapter 04) |
-| Compare | `#compare` |
-| Switch | `#switch` (chapter 05) |
+| Explore | `#explore` |
+| Find your Linux | `#find-your-linux` |
+| Switch | `#switch` |
 
-**Header button (primary):** Find your Linux → `#find-your-fit`
-**Mobile header:** logo + Menu button only. The menu lists the five chapters, then Compare, FAQ and Glossary.
+No header button: the hero holds the page's primary button.
+**Mobile header:** logo + Menu button. The menu lists Explore, Find your Linux, Switch, then Compare, FAQ and Glossary.
 
 **Mobile menu button:** Menu / Close menu
 **Section index heading (screen readers only):** On this page
 
-**Chapters (mono labels, used in the section index and above each chapter's first section):**
-| Chapter | Label | Sections |
-|---|---|---|
-| 01 | 01 / DISCOVER | Hero |
-| 02 | 02 / FIND YOUR FIT | Find your fit |
-| 03 | 03 / WHY LINUX | What is Linux?, Why now |
-| 04 | 04 / EXPLORE | Six places to start, Apps, Gaming, Your computer, What's new, Timeline, More versions, Compare, Desktops, Updates |
-| 05 | 05 / SWITCH | How to switch, FAQ, Glossary, Help |
+**Chapters** (used to group the section index; no visible numbers):
+| Chapter | Sections |
+|---|---|
+| Discover | Hero, Desktops |
+| Find your Linux | Find your Linux |
+| Why Linux | What is Linux?, Why now |
+| Explore | Six places to start, Apps, Gaming, Your computer, What's new, Timeline, More versions, Compare, Desktops explained, Updates |
+| Switch | How to switch, FAQ, Glossary, Help |
 
-**Section index short labels (in page order):** Start · Find your fit · Basics · Why now · Versions · Apps · Gaming · Your PC · New in 2026 · Timeline · More · Compare · Desktops · Updates · Switch · FAQ · Glossary · Help
+**Section index short labels (in page order):** Start · Desktops · Find your Linux · Basics · Why now · Versions · Apps · Gaming · Your PC · New in 2026 · Timeline · More · Compare · Desktops explained · Updates · Switch · FAQ · Glossary · Help
 
 ---
 
 ## 2. Hero (`#top`)
 
-Chapter **01 / DISCOVER**. Asymmetric editorial composition (see `design.md` §17). No jargon, no version numbers except in the screenshot caption.
+One job: introduce Linux and make the visitor want to explore it. No statistics, no tabs, no version numbers. Layout: `design.md` §18.
 
-**Chapter label (mono):** 01 / A fresh start for your computer
-**Headline (h1):** Give your computer a *fresh start.*
-- "fresh start." is set in Instrument Serif Italic, in blue. On screen readers it's read as one plain sentence.
+**Headline (h1):** Meet your next operating system.
+**Supporting copy (desktop):** Discover Linux. Find a desktop that works for you, and learn how to make the switch.
+**Supporting copy (mobile, shorter):** Discover Linux. Find the right desktop for you.
 
-**Subhead (keep to 2–3 lines):** Meet Linux: a free, modern alternative to Windows and macOS. We'll help you pick a version and switch at your own pace.
+**Primary button:** Find your Linux → `#find-your-linux`
+**Secondary button:** Explore Linux → `#explore`
 
-**Primary button:** Find your Linux → `#find-your-fit`
-**Secondary (text link on desktop, white button on mobile):** Explore the guide → `#what-is-linux`
+**Screenshot (full content width, 16:9)**
+- File: `distro-ubuntu-26.04.png` (owner-provided)
+- **Caption (mono):** UBUNTU / GNOME
+- **Alt text:** The Ubuntu desktop, with the Files app open and the dock on the left.
 
-**Desktop visual**
-- **Figure label (mono):** FIG. 01 / THE DESKTOP
-- **Tabs:** Ubuntu · Linux Mint · Fedora (switch the screenshot; `role="tablist"`)
-- **Window titles (mono):** ubuntu-26.04 — desktop · linux-mint — desktop · fedora-44 — desktop
-- **Overlapping small window:** Files (Documents, Pictures, Music, Downloads)
-- **Captions:**
-  - Ubuntu 26.04 with the GNOME desktop.
-  - Linux Mint with the Cinnamon desktop.
-  - Fedora 44 with the GNOME desktop.
-- **Alt text pattern:** "Screenshot of the [Distro] desktop with the Files app open."
-- Screenshots: owner-provided (`distro-ubuntu-26.04`, `distro-linux-mint`, `distro-fedora-44`).
-
-**Facts (three editorial columns under thin rules; the first is larger)**
-| Label (mono) | Figure (serif) | Text | Link |
-|---|---|---|---|
-| 01 / The cost | Free. | A complete operating system with no license fee and no subscription. | Why it's free → `#what-is-linux` |
-| 02 / Long-term support | 2031 | Ubuntu 26.04 LTS gets standard security updates until April 2031. | — |
-| 03 / Gaming | 30k+ | Steam games rated Verified or Playable on Steam Deck. Results on other PCs vary by game and hardware. | — |
-
-- Mobile: the first fact is full width; facts 2 and 3 sit side by side with shorter text: "Ubuntu 26.04 LTS security updates until April 2031." · "Steam Deck Verified or Playable games. Other PCs vary."
-- The Windows 10 end-of-support fact moves to "Why now" (section 5), so the hero is about discovering Linux, not only about Windows 10.
+The facts that used to sit here now live in their own sections: "free" in What is Linux?, "until 2031" in the Ubuntu profile, and the Steam Deck figure in Gaming.
 
 ---
 
-## 3. Find your fit (`#find-your-fit`)
+## 3. Desktops (`#desktops-preview`)
 
-Chapter **02 / FIND YOUR FIT**. The central feature of the site. Logic and scores: `data/distros.json` → `finder`.
+Right after the hero. Shows at a glance that Linux comes in different looks. No numbers, no illustrations.
 
-**Plain-language opening (always visible)**
-- **Chapter label:** 02 / Find your fit
-- **Heading (h2):** What matters *most* to you? ("most" in Instrument Serif Italic, blue)
-- **In short:** Pick one or more. We'll suggest a version of Linux that fits, and tell you the trade-offs.
+- **Heading (h2):** One Linux, many desktops.
+- **In short:** The desktop is what you see and click: the menus, windows and taskbar. Each version of Linux comes with one. Here are three popular ones.
 
-**Preferences (multi-select; numbered on desktop, 2-column tiles with icons on mobile)**
-| # | Label |
-|---|---|
-| 01 | A familiar, Windows-like experience |
-| 02 | A clean, Mac-like interface |
-| 03 | Getting more from an older PC |
-| 04 | Something that just works, with little upkeep |
-| 05 | Gaming |
-| 06 | Coding and development |
-
-**Status line:** "[n] preference selected" / "[n] preferences selected" · Clear
-**Empty state (nothing selected), in the recommendation card:** Pick at least one thing that matters to you, and your match appears here.
-
-**Recommendation card**
-- **Label:** Your match · plus the selected preferences in short form (Windows-like · Mac-like · Older PC · Just works · Gaming · Coding)
-- **Name + edition**, three reasons, one trade-off, then buttons **Get [Name]** (official site) and **Read the profile** (when a profile exists), and **Also consider** (three pills).
-- Only candidates with an owner-provided screenshot show the screenshot window; the others show the card without it.
-
-| Candidate | Name / edition | Reasons (3) | Trade-off |
+| Caption (mono) | Name (h3) | Line | Alt text |
 |---|---|---|---|
-| ubuntu | Ubuntu · 26.04 LTS | The most widely used Linux for everyday computers, with answers online for almost anything. · Free security updates until April 2031. · Install apps from a built-in store, like on a phone. | It needs 6 GB of RAM or more, and it uses Snap apps, which some people prefer to avoid. |
-| mint | Linux Mint · Cinnamon edition | The menu, taskbar and settings work the way Windows does. · Years of updates, with careful, conservative changes. · A friendly forum with an area just for newcomers. | New desktop features arrive later than on Ubuntu or Fedora. |
-| mint-xfce | Linux Mint · Xfce edition | The menu, taskbar and settings work the way Windows does. · The Xfce edition stays quick on older computers. · Years of updates, with careful, conservative changes. | New desktop features arrive later than on Ubuntu or Fedora. |
-| zorin | Zorin OS · 18 | Several layouts that look like Windows. · Connects to OneDrive and runs many Windows programs through a compatibility layer. · Made for people leaving Windows. | It's built on Ubuntu, so new features arrive a little later. |
-| elementary | elementary OS · 8.1 | A calm, carefully designed desktop that feels familiar to Mac users. · Runs on regular PCs and, for the first time, on ARM computers. · Can be installed and set up entirely with a screen reader. | It's deliberately less customizable than most Linux desktops. |
-| xubuntu | Xubuntu | Ubuntu with a lightweight desktop that runs on 2 GB of RAM or more. · The same software and updates as Ubuntu. · A simple, classic layout. | It looks plainer than modern desktops. |
-| fedora | Fedora · 44 | The newest stable tools for coding, tested before release. · New GNOME and KDE versions soon after they come out. · Sponsored by Red Hat. | You'll upgrade to a new version about once a year. |
-| popos | Pop!_OS · 24.04 with COSMIC | Windows arrange themselves neatly side by side, with the mouse or the keyboard. · A separate download includes NVIDIA drivers. · Made by System76, a company that sells Linux computers. | The COSMIC desktop is new and still getting regular fixes. |
-| bazzite | Bazzite | Steam, game launchers and graphics drivers come preinstalled. · A console-style mode for TVs and handhelds. · A bad update can be undone when you start the computer. | Some online games with anti-cheat still don't run on Linux. |
-| omarchy | Omarchy · 4 | A polished, keyboard-driven setup for developers, ready from the first boot. · Pick a default AI coding assistant during setup. · Themes restyle your editor and terminal to match. | It's not meant for beginners: it expects you to be comfortable with the terminal. |
+| UBUNTU / GNOME DESKTOP | Ubuntu | Clean and simple, with a dock of your favorite apps on the left. | The Ubuntu desktop with the GNOME dock on the left and the Files app open. |
+| LINUX MINT / CINNAMON DESKTOP | Linux Mint | A taskbar and start menu that feel familiar if you're coming from Windows. | The Linux Mint desktop with a taskbar along the bottom and the Files app open. |
+| FEDORA KDE / PLASMA DESKTOP | Fedora KDE | A familiar layout you can change down to the smallest detail. | The Fedora KDE Plasma desktop with a panel along the bottom and the Files app open. |
 
-**Accessibility:** preferences are checkboxes in a `fieldset` with the legend "What matters most to you?"; the card is an `aria-live="polite"` region announcing "Your match: [Name]".
+- **Link below the row:** How desktops differ → `#desktops`
+- Screenshots: `distro-ubuntu-26.04`, `distro-linux-mint`, `distro-fedora-kde-44` (owner-provided).
+
+---
+
+## 4. Find your Linux (`#find-your-linux`)
+
+The central feature. Logic and scores: `data/distros.json` → `finder`. Layout: 40/60 columns, `design.md` §18.
+
+- **Heading (h2):** Find your Linux.
+- **Question (fieldset legend, h3 size):** What matters most to you?
+- **Helper line:** Pick one or more.
+
+**Preferences (checkboxes, no numbers)**
+| Key | Label |
+|---|---|
+| windows | A familiar, Windows-like experience |
+| mac | A clean, Mac-like interface |
+| older | Getting more from an older PC |
+| easy | Little upkeep, few surprises |
+| gaming | Gaming |
+| coding | Development |
+
+**Clear link:** Clear choices
+**Empty state (nothing selected):** Pick at least one thing that matters to you, and your match appears here. (A neutral screenshot placeholder is not shown; the right column shows this sentence only.)
+
+**Result** (`aria-live="polite"`, announces "Your match: [Name]")
+- **Label (mono):** YOUR MATCH
+- **Name (h3, 40px)** and edition
+- **One sentence**, then the **screenshot** (full column width), then **three reasons** (check icons), then **Good to know:** [caveat]
+- **Primary button:** Explore [Name] → (its profile on this page, or its card in More versions)
+- **Text link:** Official site ↗ (`rel="noopener"`)
+- **Also consider:** three alternatives, each a text link with its one sentence
+
+| Candidate | Name / edition | One sentence | Reasons (3) | Good to know |
+|---|---|---|---|---|
+| ubuntu | Ubuntu · 26.04 LTS | The most widely used Linux for everyday computers. | Answers online for almost anything. · Free security updates until April 2031. · Install apps from a built-in store, like on a phone. | It needs 6 GB of RAM or more, and it uses Snap apps, which some people prefer to avoid. |
+| mint | Linux Mint · Cinnamon edition | A familiar desktop with straightforward navigation. | The menu, taskbar and settings work the way Windows does. · Years of updates, with careful, conservative changes. · A friendly forum with an area just for newcomers. | New desktop features arrive later than on Ubuntu or Fedora. |
+| mint-xfce | Linux Mint · Xfce edition | The familiar Mint desktop, light enough for older computers. | The menu, taskbar and settings work the way Windows does. · The Xfce edition stays quick on older computers. · Years of updates, with careful, conservative changes. | It looks plainer than the Cinnamon edition. |
+| zorin | Zorin OS · 18 | Made for people leaving Windows. | Several layouts that look like Windows. · Connects to OneDrive. · Runs many Windows programs through a compatibility layer. | Not every Windows program runs, so check the ones you rely on. |
+| elementary | elementary OS · 8.1 | A calm, carefully designed desktop that feels familiar to Mac users. | A consistent look across the system and its apps. · Runs on regular PCs and, for the first time, on ARM computers. · Can be installed and set up entirely with a screen reader. | It's deliberately less customizable than most Linux desktops. |
+| xubuntu | Xubuntu | Ubuntu with a lightweight, classic desktop. | Runs on 2 GB of RAM or more. · The same software and updates as Ubuntu. · A simple layout with a panel and menu. | It looks plainer than modern desktops. |
+| fedora | Fedora · 44 | The newest stable tools, popular with developers. | Current compilers and languages, tested before release. · New GNOME and KDE versions soon after they come out. · Sponsored by Red Hat. | You'll upgrade to a new version about once a year. |
+| popos | Pop!_OS · 24.04 with COSMIC | A modern desktop that arranges windows for you. | Windows tile neatly side by side, with the mouse or the keyboard. · A separate download includes NVIDIA drivers. · Made by System76, a company that sells Linux computers. | The COSMIC desktop is new and still getting regular fixes. |
+| bazzite | Bazzite | A gaming-ready Linux with Steam built in. | Steam, game launchers and graphics drivers come preinstalled. · A console-style mode for TVs and handhelds. · A bad update can be undone when you start the computer. | Some online games with anti-cheat still don't run on Linux. Check yours first. |
+| omarchy | Omarchy · 4 | A polished, keyboard-driven setup for developers. | Ready to code from the first boot. · Pick a default AI coding assistant during setup. · Themes restyle your editor and terminal to match. | It's not meant for beginners: it expects you to be comfortable with the terminal. |
+
+**Accessibility:** a native `<fieldset>` with `<legend>What matters most to you?</legend>` and real checkboxes (56px rows, the whole row is the label).
 **No-JS fallback:** a table "Which version for whom" listing each preference with its top match.
 
 ---
 
-## 4. What is Linux? (`#what-is-linux`)
+## 5. What is Linux? (`#what-is-linux`)
 
 **Plain-language opening (always visible)**
-- **Eyebrow:** 03 / Why Linux
+- **Eyebrow:** Why Linux
 - **Heading (h2):** What is Linux, in plain words?
 - **In short:** Linux is the software that runs a computer, like Windows or macOS. It's free, anyone can use it, and it already runs Android phones and the Steam Deck. You don't install "Linux" on its own. You pick a ready-made version of it, called a **distro**, which comes with a desktop, apps and settings, a bit like choosing a new phone.
 
-**Layout:** two split rows (see `design.md` §16).
+**Layout:** two split rows (see `design.md` §18; the illustrations will be replaced by real screenshots or simple type-only layouts).
 
 **Row 1** (text left, illustration right)
 - Uses the eyebrow, heading and "In short" above, plus the "Show the details" button.
@@ -194,12 +197,12 @@ Chapter **02 / FIND YOUR FIT**. The central feature of the site. Logic and score
 
 ---
 
-## 5. Why now (`#why-now`)
+## 6. Why now (`#why-now`)
 
 **Plain-language opening (always visible)**
 - **Eyebrow:** Why now
 - **Heading (h2):** Why so many people are trying Linux right now
-- **Chapter label (on the first section of chapter 03):** 03 / Why Linux
+- **Chapter label (on the first section of chapter 03):** Why Linux
 - **In short:** Windows 10 stopped getting security updates in October 2025, and many computers can't upgrade to Windows 11. Linux gives those computers free updates for years. Games, apps and setup have also become much easier, so switching is less of a leap than it used to be.
 
 **The details** (collapsed by default)
@@ -216,10 +219,10 @@ You may see claims that Linux now runs on 5%, 9% or even 10% of desktops. These 
 
 ---
 
-## 6. Featured distros (`#distros`)
+## 7. Featured distros (`#distros`)
 
 **Plain-language opening (always visible)**
-- **Eyebrow:** 04 / Explore
+- **Eyebrow:** Explore
 - **Heading (h2):** Six good places to start
 - **In short:** A distro is a ready-to-use version of Linux. These six cover almost everyone. If you're new, start with **Linux Mint** or **Ubuntu**: they're friendly, well supported, and have huge communities that happily answer beginner questions.
 
@@ -229,7 +232,7 @@ You may see claims that Linux now runs on 5%, 9% or even 10% of desktops. These 
 **Card buttons:** More details / Fewer details · Official site
 **Official-site button (aria pattern):** "Visit the official [Distro] website (opens the official site)"
 
-### 6.1 Ubuntu 26.04 LTS "Resolute Raccoon"
+### 7.1 Ubuntu 26.04 LTS "Resolute Raccoon"
 **In plain words (always visible):** The most popular Linux for everyday computers. Easy to install, with free updates until 2031.
 **You'll like it if (always visible):** you want something mainstream, with an answer online for every question.
 **One-liner:** The dependable default, supported until 2031.
@@ -243,7 +246,7 @@ You may see claims that Linux now runs on 5%, 9% or even 10% of desktops. These 
 - **What's new:** GNOME runs on Wayland only. Linux 7.0 kernel. Full-disk encryption protected by the TPM chip. `sudo` and core command-line tools rewritten in Rust. A faster APT 3 package manager. New default apps: Ptyxis (terminal), Resources (system monitor) and Showtime (video player). NVIDIA CUDA, AMD ROCm and Intel oneAPI available from the official archive. Firefox 150 and LibreOffice 25.8.
 - **Hardware:** 2 GHz dual-core processor, 6 GB RAM, 25 GB of storage.
 
-### 6.2 Omarchy 4 "Quattro"
+### 7.2 Omarchy 4 "Quattro"
 **In plain words (always visible):** A stylish setup for programmers, controlled almost entirely from the keyboard.
 **You'll like it if (always visible):** you write code and love keyboard shortcuts. Not meant for first-timers.
 **One-liner:** A finished, keyboard-driven desktop for developers.
@@ -257,7 +260,7 @@ You may see claims that Linux now runs on 5%, 9% or even 10% of desktops. These 
 - **What's new:** The bar, launcher, notifications, lock screen and control panels now form a single interface, opened from one menu with Super + Space. Omarchy now installs as regular system packages, which makes updates safer. A theme system with 24 colors restyles Neovim, VS Code and btop to match. You choose a default AI coding agent during setup. New built-in apps for writing, trimming video and calculating. Dual-boot support and a factory reset option. The installer shrank below 6 GB and runs about 30% faster.
 - **Hardware:** A 64-bit Intel or AMD computer. Tuned for recent laptops, including the 2026 Dell XPS 14 and 16.
 
-### 6.3 Fedora 44
+### 7.3 Fedora 44
 **In plain words (always visible):** Always-fresh software, tested carefully before it reaches you.
 **You'll like it if (always visible):** you want the newest features and don't mind upgrading about once a year.
 **One-liner:** The latest stable software, close to the source.
@@ -271,7 +274,7 @@ You may see claims that Linux now runs on 5%, 9% or even 10% of desktops. These 
 - **What's new:** GNOME 50. A new login screen for the KDE edition. The DNF5 package manager is faster and more reliable. GCC 16 and LLVM 22 compilers. NTSYNC for better Windows-game performance. Better support for ARM computers. Steady progress towards reproducible builds.
 - **Hardware:** Most computers from the last ten years. ARM64 builds are available.
 
-### 6.4 Pop!_OS 24.04 with COSMIC
+### 7.4 Pop!_OS 24.04 with COSMIC
 **In plain words (always visible):** A modern desktop that can arrange your windows neatly for you.
 **You'll like it if (always visible):** you juggle lots of windows, or you have an NVIDIA graphics card.
 **One-liner:** A tiling-friendly desktop written in Rust.
@@ -285,7 +288,7 @@ You may see claims that Linux now runs on 5%, 9% or even 10% of desktops. These 
 - **What's new:** COSMIC has been the default desktop since December 2025. Tile windows with the mouse or keyboard. Workspaces can be set per monitor and pinned. High-resolution screens are scaled automatically.
 - **Hardware:** A 64-bit Intel or AMD computer. A separate download includes NVIDIA drivers.
 
-### 6.5 Linux Mint
+### 7.5 Linux Mint
 **In plain words (always visible):** The easiest move from Windows. The menu, taskbar and settings feel familiar straight away.
 **You'll like it if (always visible):** you want your computer to feel familiar and stay calm.
 **One-liner:** The gentlest move from Windows.
@@ -299,7 +302,7 @@ You may see claims that Linux now runs on 5%, 9% or even 10% of desktops. These 
 - **What's coming:** Linux Mint 23 is planned for December 2026. It is expected to be built on Ubuntu 26.04 with Linux 7.0, and to bring full Wayland support to Cinnamon and a new installer. Mint is also moving to a longer development cycle.
 - **Hardware:** Modest. The Xfce edition runs well on older machines.
 
-### 6.6 Debian 13 "trixie"
+### 7.6 Debian 13 "trixie"
 **In plain words (always visible):** Rock-solid and slow to change. Many other versions are built on it.
 **You'll like it if (always visible):** you want a system that stays the same for years, or you're running a server.
 **One-liner:** The stable foundation many distros build on.
@@ -315,7 +318,7 @@ You may see claims that Linux now runs on 5%, 9% or even 10% of desktops. These 
 
 ---
 
-## 7. Apps and software (`#apps`)
+## 8. Apps and software (`#apps`)
 
 **Plain-language opening (always visible)**
 - **Eyebrow:** Your apps
@@ -353,7 +356,7 @@ You may see claims that Linux now runs on 5%, 9% or even 10% of desktops. These 
 
 ---
 
-## 8. Gaming on Linux (`#gaming`)
+## 9. Gaming on Linux (`#gaming`)
 
 **Plain-language opening (always visible)**
 - **Eyebrow:** Gaming
@@ -389,7 +392,7 @@ Some popular online multiplayer games, including Battlefield 6, Call of Duty and
 
 ---
 
-## 9. Hardware check (`#hardware`)
+## 10. Hardware check (`#hardware`)
 
 **Plain-language opening (always visible)**
 - **Eyebrow:** Your computer
@@ -412,7 +415,7 @@ Some popular online multiplayer games, including Battlefield 6, Call of Duty and
 
 ---
 
-## 10. What's new in 2026 (`#whats-new`)
+## 11. What's new in 2026 (`#whats-new`)
 
 **Plain-language opening (always visible)**
 - **Eyebrow:** New this year
@@ -467,7 +470,7 @@ Omarchy 4 asks you to choose a default AI coding agent, such as Claude Code, Cod
 
 ---
 
-## 11. Release calendar (`#calendar`)
+## 12. Release calendar (`#calendar`)
 
 **Plain-language opening (always visible)**
 - **Eyebrow:** Timeline
@@ -501,7 +504,7 @@ Omarchy 4 asks you to choose a default AI coding agent, such as Claude Code, Cod
 
 ---
 
-## 12. More distros (`#more-distros`)
+## 13. More distros (`#more-distros`)
 
 **Plain-language opening (always visible)**
 - **Eyebrow:** More versions
@@ -530,7 +533,7 @@ Omarchy 4 asks you to choose a default AI coding agent, such as Claude Code, Cod
 
 ---
 
-## 13. Comparison table (`#compare`)
+## 14. Comparison table (`#compare`)
 
 **Plain-language opening (always visible)**
 - **Eyebrow:** Side by side
@@ -567,7 +570,7 @@ Omarchy 4 asks you to choose a default AI coding agent, such as Claude Code, Cod
 
 ---
 
-## 14. Desktops explained (`#desktops`)
+## 15. Desktops explained (`#desktops`)
 
 **Plain-language opening (always visible)**
 - **Eyebrow:** How it looks
@@ -599,7 +602,7 @@ Omarchy 4 asks you to choose a default AI coding agent, such as Claude Code, Cod
 
 ---
 
-## 15. How distros update (`#release-models`)
+## 16. How distros update (`#release-models`)
 
 **Plain-language opening (always visible)**
 - **Eyebrow:** Updates
@@ -632,10 +635,10 @@ You write down what your system should contain, and the distro builds exactly th
 
 ---
 
-## 16. Switching guide (`#switch`)
+## 17. Switching guide (`#switch`)
 
 **Plain-language opening (always visible)**
-- **Eyebrow:** 05 / Switch
+- **Eyebrow:** Switch
 - **Heading (h2):** How to switch, step by step
 - **In short:** Plan for an afternoon. Back up your files, put Linux on a USB stick and try it out. Only install it when you're happy, and you can keep Windows alongside it if you like.
 
@@ -672,7 +675,7 @@ You write down what your system should contain, and the distro builds exactly th
 
 ---
 
-## 17. FAQ (`#faq`)
+## 18. FAQ (`#faq`)
 
 **Plain-language opening (always visible)**
 - **Eyebrow:** Questions
@@ -722,7 +725,7 @@ You write down what your system should contain, and the distro builds exactly th
 
 ---
 
-## 18. Glossary (`#glossary`)
+## 19. Glossary (`#glossary`)
 
 **Plain-language opening (always visible)**
 - **Eyebrow:** Reference
@@ -761,7 +764,7 @@ You write down what your system should contain, and the distro builds exactly th
 
 ---
 
-## 19. Get help, sources and footer (`#help`)
+## 20. Get help, sources and footer (`#help`)
 
 **Plain-language opening (always visible)**
 - **Eyebrow:** Community
@@ -806,7 +809,7 @@ You write down what your system should contain, and the distro builds exactly th
 
 ---
 
-## 20. 404 page
+## 21. 404 page
 
 **`<title>`:** Page not found · Distro L. Desk
 **Heading (h1):** Do androids dream of missing pages?
@@ -816,7 +819,7 @@ You write down what your system should contain, and the distro builds exactly th
 
 ---
 
-## 21. Microcopy reference
+## 22. Microcopy reference
 
 | Context | Text |
 |---|---|

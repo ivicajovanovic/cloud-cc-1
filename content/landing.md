@@ -16,33 +16,34 @@
 
 ---
 
-## Page map (19 sections in 5 chapters, editorial direction)
+## Page map (20 sections in 5 chapters, Linux desktop direction)
 
-The narrative: **Discover → Find your fit → Why Linux → Explore → Switch.** One dominant goal: help each visitor find a Linux version that fits.
+The narrative: **Discover → Find your Linux → Why Linux → Explore → Switch.** One idea: discovering a Linux desktop that fits you. The real desktops are the visual identity (`design.md` §18).
 
 | # | Chapter | Section | Anchor |
 |---|---|---|---|
-| 1 | — | Header (`dLD.` · Explore · Compare · Switch · **Find your Linux**) | — |
-| 2 | 01 / Discover | Hero: headline, desktop window with distro tabs, three facts | `#top` |
-| 3 | 02 / Find your fit | Multi-select preferences + live recommendation (the central feature) | `#find-your-fit` |
-| 4 | 03 / Why Linux | What is Linux? | `#what-is-linux` |
-| 5 | 03 / Why Linux | Why now (Windows 10 end of support lives here) | `#why-now` |
-| 6 | 04 / Explore | Six good places to start | `#explore` / `#distros` |
-| 7 | 04 / Explore | Will my apps work? | `#apps` |
-| 8 | 04 / Explore | Can I game on Linux? | `#gaming` |
-| 9 | 04 / Explore | Will it run on my computer? | `#hardware` |
-| 10 | 04 / Explore | What's new in 2026 | `#whats-new` |
-| 11 | 04 / Explore | The year in releases | `#calendar` |
-| 12 | 04 / Explore | More versions | `#more-distros` |
-| 13 | 04 / Explore | Compare side by side | `#compare` |
-| 14 | 04 / Explore | How it looks (desktops) | `#desktops` |
-| 15 | 04 / Explore | How updates work | `#release-models` |
-| 16 | 05 / Switch | How to switch, step by step | `#switch` |
-| 17 | 05 / Switch | FAQ | `#faq` |
-| 18 | 05 / Switch | Glossary | `#glossary` |
-| 19 | 05 / Switch | Help, sources, footer | `#help` |
+| 1 | — | Header (`dLD.` · Explore · Find your Linux · Switch) | — |
+| 2 | Discover | Hero: headline, support line, two buttons, full-width Ubuntu screenshot | `#top` |
+| 3 | Discover | Desktops: Ubuntu / GNOME, Linux Mint / Cinnamon, Fedora KDE / Plasma | `#desktops-preview` |
+| 4 | Find your Linux | Preferences (40%) + live result with a full-width screenshot (60%) | `#find-your-linux` |
+| 5 | Why Linux | What is Linux? | `#what-is-linux` |
+| 6 | Why Linux | Why now (Windows 10 end of support lives here) | `#why-now` |
+| 7 | Explore | Six good places to start | `#explore` / `#distros` |
+| 8 | Explore | Will my apps work? | `#apps` |
+| 9 | Explore | Can I game on Linux? | `#gaming` |
+| 10 | Explore | Will it run on my computer? | `#hardware` |
+| 11 | Explore | What's new in 2026 | `#whats-new` |
+| 12 | Explore | The year in releases | `#calendar` |
+| 13 | Explore | More versions | `#more-distros` |
+| 14 | Explore | Compare side by side | `#compare` |
+| 15 | Explore | Desktops explained | `#desktops` |
+| 16 | Explore | How updates work | `#release-models` |
+| 17 | Switch | How to switch, step by step | `#switch` |
+| 18 | Switch | FAQ | `#faq` |
+| 19 | Switch | Glossary | `#glossary` |
+| 20 | Switch | Help, sources, footer | `#help` |
 
-Each chapter starts with a thin rule and a mono chapter label. The old three-switch finder and the hero "What matters to you?" pills are merged into **Find your fit**.
+Chapters group the section index only; they get no visible numbers or labels on the page. Order: design the hero, Desktops and Find your Linux (desktop and 390 mobile) completely before any further section.
 
 **The section pattern (every section):** a plain-language opening that is always visible (eyebrow, h2, "In short" lead paragraph in `body-lg`), then a **"Show the details"** panel with the technical content. Whether the panel starts open or closed is noted per section in `content/copy.md`.
 

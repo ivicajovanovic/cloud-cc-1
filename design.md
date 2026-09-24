@@ -1,6 +1,6 @@
 # design.md: Soft UI (Neumorphism)
 
-> **Project direction (latest, September 2026):** Distro L. Desk uses a **contemporary editorial** direction (§17), which overrides §16 (relaxed Soft UI) and the neumorphic rules. Accessibility, spacing, motion and component-state rules below still apply.
+> **Project direction (latest, September 2026):** Distro L. Desk uses the **Linux desktop, product-precise** direction (§18). It overrides §17 (editorial), §16 (relaxed Soft UI) and the neumorphic rules. Accessibility, motion and component-state rules below still apply; where a value differs, §18 wins.
 
 This document defines the visual language for our interfaces: **Soft UI**, better known as *neumorphism*. Designers and engineers should both work from it. It covers the principles, design tokens, component recipes, accessibility rules and the do's and don'ts that come from how the style has been used in real products (and from its well-known failures).
 
@@ -499,7 +499,7 @@ Chosen by the site owner from two reference designs: airy, calm, less "3D".
 - `03 What is Linux v3`: split row 1 (the "many versions, one core" ring diagram) and split row 2 (screenshot cards, "Running from USB").
 - Frames marked `(old)` are the previous neumorphic versions, kept for reference.
 
-## 17. Contemporary editorial direction (current; overrides §16)
+## 17. Contemporary editorial direction (superseded by §18)
 
 **Goal:** a modern digital publication about Linux combined with a well-presented OS discovery tool. Distinctive through typography, composition and real Linux imagery, not effects.
 
@@ -532,3 +532,89 @@ Chapter labels are structural (they match the navigation), not decoration. Don't
 - `02 Hero v4` and `03 Find your fit` are the reference frames for this direction (desktop 1440 + mobile 390).
 - `04 What is Linux v3` and `06 Distro cards` pick up the new palette and fonts automatically but still use the previous layouts; restyle them with these principles.
 - Frames marked `(old)` are superseded.
+
+---
+
+## 18. Linux desktop, product-precise (current; overrides §16–§17)
+
+**The idea:** discovering a Linux desktop that fits you. **The real Linux desktops are the visual identity.** Type, layout, spacing and interaction support them. There are no ornaments.
+
+**Reference:** GNOME, for spacing, interface clarity and product presentation, not as a UI kit to copy. The website must never look like a fake OS app. For example, the recommender is not styled like GNOME Settings.
+
+### What is removed
+- The serif (Instrument Serif), the warm beige canvas, the peach glow, the window dots and drawn "desktop windows".
+- Decorative numbering: no chapter numbers (`01 / DISCOVER`) and no numbered cards. Numbers stay only in the switching steps, where order matters.
+- Statistics in or right below the hero (Free. / 2031 / 30k+). Those facts live in their own sections.
+- Small mono labels that carry no information (figure numbers, window titles, "FIG. 01").
+- No dark default, no extra terminal elements, no new visual style on top of this one.
+
+### Tokens
+| Token | Light | Dark | Use / contrast |
+|---|---|---|---|
+| `--bg` | `#F8F9FA` | `#1C1D1F` | Page background |
+| `--surface` | `#FFFFFF` | `#26272A` | Controls, menus |
+| `--surface-2` | `#EAF2FC` | `#1E2A3A` | Secondary surfaces (selected option fill, callouts) |
+| `--text` | `#202124` | `#E8EAED` | Text, 15.3:1 / 14.2:1 |
+| `--text-muted` | `#5F6368` | `#9AA0A6` | Secondary text, 5.7:1 / 6.5:1 |
+| `--accent` | `#3584E4` | `#78AEED` | Non-text accents: focus ring, selected border, check marks (3.6:1 vs bg, passes the 3:1 non-text rule) |
+| `--accent-strong` | `#1C71D8` | `#78AEED` | Primary button fill (white label 4.8:1) and link text (4.5:1). Dark: button label `#1C1D1F` (7.4:1) |
+| `--accent-on-surface-2` | `#1A5FB4` | `#99C1F1` | Blue text on `--surface-2` (5.6:1) |
+| `--border` | `#DDE2E8` | `#3A3D42` | 1px borders on surfaces and screenshots |
+| `--control-edge` | `#8A9099` | `#8A9099` | Checkbox squares and input edges (3:1) |
+
+`#3584E4` is the GNOME accent blue. It's used as the identity color wherever it doesn't carry text. On white it's only 3.8:1, so text and button fills use the darker `#1C71D8`, and the two read as one blue.
+
+### Type (Inter, two weights: 400 and 600)
+| Style | Desktop | Mobile | Weight / tracking |
+|---|---|---|---|
+| Display (hero h1) | 72 / 76 (1.05), max width 850px | 42 / 46 | 600, −2.5% |
+| H2 (section) | 44 / 50, max width 760px | 32 / 38 | 600, −2% |
+| H3 | 24 / 30 | 20 / 26 | 600, −1% |
+| Body large (hero support, section intros) | 18 / 28, max width 560px | 16 / 24 | 400 |
+| Body | 16 / 24 | 16 / 24 | 400 |
+| Label / button | 16 / 24 | 16 / 24 | 600 |
+| Small | 14 / 20 | 14 / 20 | 400 |
+| Technical label | IBM Plex Mono 11 / 16, uppercase, +6% | same | Regular. **Only** for information: screenshot captions ("UBUNTU / GNOME"), versions, "YOUR MATCH" |
+
+No italics for emphasis in headlines, and no colored words in headlines.
+
+### Shape, borders, shadows, spacing
+- **Radius:** 8px for controls (buttons, options, inputs, pills); 16px for large surfaces (screenshots, panels).
+- **Borders:** 1px `--border`. Screenshots get a 1px border so light desktops keep an edge on the light page.
+- **Shadows:** only on floating interface elements (sticky header after scroll, menus, popovers, toasts): `0 1px 2px rgb(32 33 36 / .06), 0 8px 24px rgb(32 33 36 / .08)`. None on cards, screenshots or buttons.
+- **Spacing:** 8px base (4, 8, 12, 16, 24, 32, 48, 64, 96, 128). Section padding: 128 desktop, 80 mobile.
+- **Layout:** content width **1280px**, centered (80px margins in a 1440 frame). 12 columns, 32px gutters. Mobile: **24px** side margins, 4 columns, 16px gutters.
+
+### Screenshots (the main visual)
+- **Real screenshots only.** Never reconstruct a desktop in Figma or HTML/CSS. No browser or laptop frames, and no colored rectangles behind images.
+- The same capture rules for every image (see `brand.md` §6): consistent size, default wallpaper, one or two apps open, light mode where available.
+- **Crops are art-directed per breakpoint** with `<picture>` sources: desktop shows the full 16:9 view. Mobile uses a deliberate crop (about 4:5 or 1:1) of the part that makes the desktop recognizable, such as the dock and an open app. Never shrink the whole 2560px desktop into a 342px box.
+- **Caption:** below the image, a mono technical label `UBUNTU / GNOME` in `--text-muted`.
+- **Placeholders** (until the owner delivers images): a flat `--surface-2` box with 16px radius at the exact aspect ratio, with a centered mono label giving the file name. No drawn UI inside.
+
+### Components
+| Component | Spec |
+|---|---|
+| Header | 80px high. `dLD.` (Inter 600, 24px) on the left; nav **Explore · Find your Linux · Switch** (Inter 400, 16px, `--text`), a theme toggle icon button. No header button: the hero holds the only primary. After scrolling, the header gets a `--surface` fill and the floating shadow. Mobile: 64px, logo + Menu button |
+| Primary button | 48px high, 8px radius, `--accent-strong` fill, white Inter 600 16px, 24px side padding, trailing arrow. Hover: `#1A5FB4`. One per view |
+| Secondary button | 48px, 8px radius, `--surface` fill, 1px `--border`, `--text` label |
+| Text link | `--accent-strong`, underline on hover and focus |
+| Preference option | Minimum **56px** high, full column width, 8px radius, `--surface` fill, 1px `--border`, 16px padding. A 20px checkbox square on the left (1.5px `--control-edge`, 4px radius), label Inter 400 16px. Selected: `--surface-2` fill, 1.5px `--accent` border, filled `--accent` checkbox with a white check. Real `<input type="checkbox">` in a `<fieldset>` |
+| Focus ring | 2px `--accent` outline with 2px offset, on everything focusable |
+| Screenshot figure | `<figure>`: image (16px radius, 1px border) + mono caption |
+
+### Section recipes
+**Hero.** Left-aligned in the 1280 column. The h1 (72px, max 850px) is followed by 24px of space, then the support copy (18px, max 560px), then 40px of space and the buttons (primary + secondary, gap 12). After 64px comes a full-width 16:9 screenshot (1280×720) with its caption. No statistics, no tabs, no floating windows.
+
+**Three desktops** (right after the hero). H2 + one short intro line, then three screenshots in a row (3 × 405px, 32px gutters) at the same 16:10 ratio and crop logic. Under each: a mono caption (`UBUNTU / GNOME DESKTOP`), the name in Inter 600 20px, and one plain sentence. Mobile: a single column of stacked images at 342×256 with deliberate crops, or a horizontal scroll-snap row showing 85% of a card so the next one peeks in.
+
+**Find your Linux** (the recommender). Two columns, **40 / 60** (about 480 / 768 px with a 32px gap):
+- **Left:** h2 "Find your Linux.", the fieldset legend "What matters most to you?" (h3 size), the preference options (8px gap) and a "Clear" text link under the list.
+- **Right (the result, `aria-live="polite"`):** mono "YOUR MATCH", the name (Inter 600 40px) and edition, one sentence, a **full-width screenshot** (768×480), three reasons (check icon + text), a "Good to know" caveat line, then "Explore [Name] →" (primary) and "Official site ↗" (text link). Below that, after a 1px border, "Also consider": three plain text links with one short line each.
+- No white card, no heavy shadow, no nested containers. The result sits directly on the page background.
+- Mobile: the preferences stack above the result. Options are full width (56px), and the result follows with a cropped screenshot at 342×260.
+
+**Mobile rhythm (390):** 24px margins; h1 42px; body 16px; primary button full width (342×48); the screenshot sits right below the buttons, 342 wide with a cropped 4:5 view (342×428) so the desktop stays recognizable.
+
+### Figma
+Reference frames: `02 Hero v5`, `03 Desktops`, `04 Find your Linux v2` (Desktop 1440 + Mobile 390). The `(old)` frames are superseded, including `02 Hero v4` and `03 Find your fit`.

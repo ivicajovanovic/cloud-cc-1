@@ -282,37 +282,31 @@
     }
   ],
   "finder": {
-    "_about": "Multi-select 'Find your fit'. Each selected preference adds that candidate's score; the highest total wins. Ties go to the earlier candidate in 'order' (most beginner-friendly first). With nothing selected, show the empty state. Texts are in content/copy.md section 3.",
+    "_about": "Multi-select 'Find your Linux'. Each selected preference adds that candidate's score; the highest total wins. Ties go to the earlier candidate in 'order' (most beginner-friendly first). With nothing selected, show the empty state. Texts are in content/copy.md section 4. Every candidate shows a screenshot; the file names are below.",
     "preferences": [
       {
         "id": "windows",
-        "label": "A familiar, Windows-like experience",
-        "icon": "screen-with-taskbar"
+        "label": "A familiar, Windows-like experience"
       },
       {
         "id": "mac",
-        "label": "A clean, Mac-like interface",
-        "icon": "screen-with-dock"
+        "label": "A clean, Mac-like interface"
       },
       {
         "id": "older",
-        "label": "Getting more from an older PC",
-        "icon": "laptop"
+        "label": "Getting more from an older PC"
       },
       {
         "id": "easy",
-        "label": "Something that just works, with little upkeep",
-        "icon": "check-circle"
+        "label": "Little upkeep, few surprises"
       },
       {
         "id": "gaming",
-        "label": "Gaming",
-        "icon": "gamepad"
+        "label": "Gaming"
       },
       {
         "id": "coding",
-        "label": "Coding and development",
-        "icon": "code"
+        "label": "Development"
       }
     ],
     "order": [
@@ -438,7 +432,7 @@
         "name": "Linux Mint",
         "edition": "Xfce edition",
         "distro": "mint",
-        "screenshot": "distro-linux-mint",
+        "screenshot": "distro-linux-mint-xfce",
         "url": "https://linuxmint.com",
         "alternatives": [
           "zorin",
@@ -450,7 +444,7 @@
         "name": "Zorin OS",
         "edition": "18",
         "distro": "zorin",
-        "screenshot": null,
+        "screenshot": "distro-zorin-18",
         "url": "https://zorin.com/os",
         "alternatives": [
           "mint",
@@ -462,7 +456,7 @@
         "name": "elementary OS",
         "edition": "8.1",
         "distro": "elementary",
-        "screenshot": null,
+        "screenshot": "distro-elementary-8.1",
         "url": "https://elementary.io",
         "alternatives": [
           "ubuntu",
@@ -474,7 +468,7 @@
         "name": "Xubuntu",
         "edition": "",
         "distro": null,
-        "screenshot": null,
+        "screenshot": "distro-xubuntu",
         "url": "https://xubuntu.org",
         "alternatives": [
           "mint-xfce",
@@ -510,7 +504,7 @@
         "name": "Bazzite",
         "edition": "",
         "distro": "bazzite",
-        "screenshot": null,
+        "screenshot": "distro-bazzite",
         "url": "https://bazzite.gg",
         "alternatives": [
           "popos",

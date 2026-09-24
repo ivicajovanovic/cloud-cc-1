@@ -45,6 +45,8 @@ The style became popular around 2019–2020 through Dribbble concept work (Alexa
 
 ## 3. Design tokens
 
+> **Project note:** for Distro L. Desk, the accent (`--accent`) is replaced by the **amber** tokens in `brand.md` §3, and the typefaces by `brand.md` §4. Every other token below still applies.
+
 ### 3.1 Color: light theme (default)
 
 | Token | Value | Use |
@@ -371,3 +373,78 @@ Neumorphism's biggest criticism is accessibility: controls defined only by faint
 - [ ] Works in dark mode, high contrast, forced colors and reduced motion
 - [ ] No more than two depth levels in any region; spacing ≥ 2× shadow offset
 - [ ] Soft UI is used only on touchable or grouping elements; content stays flat
+
+---
+
+## 11. Layout system (Distro L. Desk)
+
+| Breakpoint | Width | Columns | Gutter | Side margin |
+|---|---|---|---|---|
+| `sm` | 360–599px | 4 | 16px | 16px |
+| `md` | 600–1023px | 8 | 24px | 32px |
+| `lg` | 1024–1439px | 12 | 24px | 48px |
+| `xl` | ≥ 1440px | 12 | 32px | auto (content max 1200px) |
+
+- **Content width:** 1200px max for the page, **68ch max** for running text.
+- **Figma frames:** design at **1440** (desktop) and **390** (mobile); check 768 before handoff.
+- **Section rhythm:** 128px between sections on desktop, 80px on mobile. Headings sit 24px above the intro text and 48px above the content.
+- **Sticky section index:** desktop has a vertical, raised control strip at the left edge of the grid (collapses to dots below 1280px). Mobile has a horizontal scrolling strip under the header that appears after the hero.
+- **Header:** 72px desktop, 60px mobile. It's the flat surface color with a subtle `raised-1` shadow once the page scrolls.
+
+## 12. Page components (beyond §5)
+
+| Component | Used in | Depth | Notes |
+|---|---|---|---|
+| **Keycap** | Hero, distro profiles | Raised `2` → inset on press | Square 88px (desktop) / 64px (mobile), radius 20px. JetBrains Mono monogram, amber indicator dot when active |
+| **Readout** | Hero numbers, gaming stats | Inset well | Mono 700 figure + Inter label + source superscript |
+| **Switch row** | Finder | Inset track + raised thumb | Segmented control with 2–4 options; active option gets amber text |
+| **Result lamp** | Finder result | Raised card with a round amber "lamp" | The lamp lights up (fill fades in) when a result appears |
+| **Timeline slider** | Calendar | Inset track, raised thumb | Ticks for each release; planned releases get hollow ticks |
+| **Profile card** | Distros | Raised `3` | Expands in place; the facts row is a flat 4-column definition list |
+| **Mini card** | More distros | Flat on surface, with a thin `--control-edge` border | Deliberately flat: there are many of them |
+| **Data table** | Compare, Apps | Flat, in an inset container | Sticky first column, zebra rows with 4% ink, filter chips above (raised → inset when active) |
+| **Callout** | Why now, Gaming, Hardware, Switch | Flat, 4px amber left bar | Icon + title + text |
+| **Desktop schematic** | Desktops | Inset "screen" with flat shapes | Drawn in CSS/SVG, 16:10 |
+| **Step rail** | Switch guide | Inset vertical track that fills with amber as you scroll | Numbered raised dots |
+| **Accordion** | FAQ, source list | Raised when closed, inset when open | Chevron rotates |
+| **Glossary search** | Glossary | Inset input | Results filter live; count announced |
+| **Source mark** | Everywhere | Flat | Superscript mono number links to the source list |
+| **Logo** | Header, footer, 404 | Flat | See `brand.md` §2 |
+
+## 13. Flat vs. soft, per section
+
+Depth is only for things you touch or that group content. Everything else stays flat.
+
+| Section | Soft (raised/inset) | Flat |
+|---|---|---|
+| Hero | Keycaps, buttons, readouts | Headline, subhead |
+| Why now | — | Text, callout |
+| What's new | Icon wells (small) | Six items |
+| Calendar | Slider, selected-release card | List fallback |
+| Distros | Profile cards, buttons | Facts, text |
+| More distros | Group filter chips | Mini cards |
+| Compare | Filter chips, table container (inset) | Table |
+| Finder | Switches, result card | Questions |
+| Desktops | Schematic "screens" (inset) | Text |
+| Update models | Four tiles | — |
+| Apps | — | Steps, table |
+| Gaming | Readouts | Text, callout |
+| Hardware | — | Table, callout |
+| Switch | Step rail | Steps |
+| Glossary | Search input | Definitions |
+| FAQ | Accordion items | Answers |
+| Help / footer | Final CTA button | Everything else |
+
+## 14. Motion (Distro L. Desk)
+
+| Interaction | Motion | Duration |
+|---|---|---|
+| Key / button press | raised → inset + scale 0.98 | 120ms |
+| Switch toggle | Thumb slides, track fills | 200ms |
+| Finder result | Card rises (inset → raised), lamp fades in | 240ms |
+| Timeline scrub | Selected card cross-fades | 160ms |
+| Accordion | Height + chevron rotate | 200ms |
+| Section enter (optional) | Fade + 8px rise, once only | 300ms |
+| Logo cursor (concept C only) | One blink on load | 1 blink |
+
+With `prefers-reduced-motion`: state changes are instant, and there are no scale, rise or blink effects.

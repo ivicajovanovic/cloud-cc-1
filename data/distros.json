@@ -1,0 +1,382 @@
+{
+  "_meta": {
+    "asOf": "2026-09",
+    "note": "Single source for the profiles, comparison table and finder. Text must match content/copy.md; facts must match research/distros-2026.md.",
+    "recheck": [
+      "Support column for fedora, popos, zorin, elementary",
+      "officialUrl for every entry"
+    ]
+  },
+  "distros": [
+    {
+      "id": "ubuntu",
+      "name": "Ubuntu",
+      "monogram": "Ub",
+      "version": "26.04 LTS",
+      "codename": "Resolute Raccoon",
+      "released": "2026-04-23",
+      "base": "Debian",
+      "desktop": "GNOME 50",
+      "updates": "Fixed, long-term support",
+      "packageTools": "apt, Snap",
+      "support": "Until April 2031",
+      "bestFor": "Most people, servers",
+      "filters": [
+        "beginner",
+        "developers",
+        "servers"
+      ],
+      "featured": true,
+      "officialUrl": "https://ubuntu.com/download"
+    },
+    {
+      "id": "omarchy",
+      "name": "Omarchy",
+      "monogram": "Om",
+      "version": "4.0",
+      "codename": "Quattro",
+      "released": "2026-08-14",
+      "base": "Arch Linux",
+      "desktop": "Hyprland",
+      "updates": "Rolling",
+      "packageTools": "pacman, AUR",
+      "support": "Rolling",
+      "bestFor": "Developers, keyboard users",
+      "filters": [
+        "developers"
+      ],
+      "featured": true,
+      "officialUrl": "https://omarchy.org"
+    },
+    {
+      "id": "fedora",
+      "name": "Fedora",
+      "monogram": "Fe",
+      "version": "44",
+      "codename": null,
+      "released": "2026-04-28",
+      "base": "Independent",
+      "desktop": "GNOME 50 or KDE",
+      "updates": "Fixed, about every 6 months",
+      "packageTools": "dnf5, Flatpak",
+      "support": "About 13 months",
+      "bestFor": "Developers, new software",
+      "filters": [
+        "developers"
+      ],
+      "featured": true,
+      "officialUrl": "https://fedoraproject.org"
+    },
+    {
+      "id": "popos",
+      "name": "Pop!_OS",
+      "monogram": "Po",
+      "version": "24.04",
+      "codename": null,
+      "released": "2025-12-11",
+      "base": "Ubuntu",
+      "desktop": "COSMIC",
+      "updates": "Fixed",
+      "packageTools": "apt, Flatpak",
+      "support": "Ubuntu 24.04 base",
+      "bestFor": "Tiling, NVIDIA users",
+      "filters": [
+        "beginner",
+        "developers"
+      ],
+      "featured": true,
+      "officialUrl": "https://system76.com/pop"
+    },
+    {
+      "id": "mint",
+      "name": "Linux Mint",
+      "monogram": "Mi",
+      "version": "22.x (23 planned)",
+      "codename": null,
+      "released": null,
+      "base": "Ubuntu",
+      "desktop": "Cinnamon",
+      "updates": "Fixed",
+      "packageTools": "apt, Flatpak",
+      "support": "Ubuntu LTS base",
+      "bestFor": "Windows switchers",
+      "filters": [
+        "beginner"
+      ],
+      "featured": true,
+      "officialUrl": "https://linuxmint.com"
+    },
+    {
+      "id": "debian",
+      "name": "Debian",
+      "monogram": "De",
+      "version": "13.7",
+      "codename": "trixie",
+      "released": "2026-09-12",
+      "base": "Independent",
+      "desktop": "Your choice",
+      "updates": "Fixed, about every 2 years",
+      "packageTools": "apt",
+      "support": "Until June 2030",
+      "bestFor": "Servers, stability",
+      "filters": [
+        "servers"
+      ],
+      "featured": true,
+      "officialUrl": "https://www.debian.org"
+    },
+    {
+      "id": "zorin",
+      "name": "Zorin OS",
+      "monogram": "Zo",
+      "version": "18",
+      "codename": null,
+      "released": "2025-10-14",
+      "base": "Ubuntu",
+      "desktop": "Zorin (GNOME-based)",
+      "updates": "Fixed",
+      "packageTools": "apt, Flatpak, Snap",
+      "support": "Several years",
+      "bestFor": "Windows switchers",
+      "filters": [
+        "beginner"
+      ],
+      "featured": false,
+      "officialUrl": "https://zorin.com/os"
+    },
+    {
+      "id": "elementary",
+      "name": "elementary OS",
+      "monogram": "el",
+      "version": "8.1",
+      "codename": null,
+      "released": null,
+      "base": "Ubuntu",
+      "desktop": "Pantheon",
+      "updates": "Fixed",
+      "packageTools": "apt, Flatpak",
+      "support": "Ubuntu LTS base",
+      "bestFor": "Mac switchers",
+      "filters": [
+        "beginner"
+      ],
+      "featured": false,
+      "officialUrl": "https://elementary.io"
+    },
+    {
+      "id": "bazzite",
+      "name": "Bazzite",
+      "monogram": "Bz",
+      "version": "Continuous images",
+      "codename": null,
+      "released": null,
+      "base": "Fedora Atomic",
+      "desktop": "KDE or GNOME",
+      "updates": "Atomic",
+      "packageTools": "Flatpak, rpm-ostree",
+      "support": "Continuous",
+      "bestFor": "Gaming, handhelds",
+      "filters": [
+        "beginner",
+        "gaming"
+      ],
+      "featured": false,
+      "officialUrl": "https://bazzite.gg"
+    },
+    {
+      "id": "cachyos",
+      "name": "CachyOS",
+      "monogram": "Ca",
+      "version": "Rolling",
+      "codename": null,
+      "released": null,
+      "base": "Arch Linux",
+      "desktop": "KDE Plasma (choice)",
+      "updates": "Rolling",
+      "packageTools": "pacman",
+      "support": "Rolling",
+      "bestFor": "Gaming, performance",
+      "filters": [
+        "gaming"
+      ],
+      "featured": false,
+      "officialUrl": "https://cachyos.org"
+    },
+    {
+      "id": "steamos",
+      "name": "SteamOS",
+      "monogram": "St",
+      "version": "3.8",
+      "codename": null,
+      "released": "2026-06",
+      "base": "Arch Linux",
+      "desktop": "Steam + KDE Plasma",
+      "updates": "Atomic",
+      "packageTools": "Flatpak",
+      "support": "Valve",
+      "bestFor": "Gaming on AMD PCs",
+      "filters": [
+        "gaming"
+      ],
+      "featured": false,
+      "officialUrl": "https://store.steampowered.com/steamos"
+    },
+    {
+      "id": "arch",
+      "name": "Arch Linux",
+      "monogram": "Ar",
+      "version": "Rolling",
+      "codename": null,
+      "released": null,
+      "base": "Independent",
+      "desktop": "None (you choose)",
+      "updates": "Rolling",
+      "packageTools": "pacman, AUR",
+      "support": "Rolling",
+      "bestFor": "Tinkerers",
+      "filters": [
+        "developers"
+      ],
+      "featured": false,
+      "officialUrl": "https://archlinux.org"
+    },
+    {
+      "id": "opensuse",
+      "name": "openSUSE Leap",
+      "monogram": "Su",
+      "version": "16.0",
+      "codename": null,
+      "released": "2025-10-01",
+      "base": "SUSE Enterprise",
+      "desktop": "KDE or GNOME",
+      "updates": "Fixed, yearly",
+      "packageTools": "zypper, Flatpak",
+      "support": "16.x series until 2031",
+      "bestFor": "Workstations, business",
+      "filters": [
+        "developers",
+        "servers"
+      ],
+      "featured": false,
+      "officialUrl": "https://get.opensuse.org"
+    },
+    {
+      "id": "nixos",
+      "name": "NixOS",
+      "monogram": "Nx",
+      "version": "26.05",
+      "codename": "Yarara",
+      "released": "2026-05",
+      "base": "Independent",
+      "desktop": "Your choice",
+      "updates": "Declarative",
+      "packageTools": "nix",
+      "support": "Until December 31, 2026",
+      "bestFor": "Reproducible setups",
+      "filters": [
+        "developers",
+        "servers"
+      ],
+      "featured": false,
+      "officialUrl": "https://nixos.org"
+    }
+  ],
+  "finder": {
+    "questions": {
+      "tinker": [
+        "none",
+        "little",
+        "enjoy"
+      ],
+      "use": [
+        "everyday",
+        "coding",
+        "gaming",
+        "servers"
+      ],
+      "style": [
+        "mouse",
+        "keyboard"
+      ]
+    },
+    "rules": [
+      {
+        "when": {
+          "use": "servers"
+        },
+        "result": "debian",
+        "alt": "Ubuntu Server"
+      },
+      {
+        "when": {
+          "use": "gaming",
+          "tinker": "enjoy"
+        },
+        "result": "cachyos",
+        "alt": "bazzite"
+      },
+      {
+        "when": {
+          "use": "gaming"
+        },
+        "result": "bazzite",
+        "alt": "SteamOS (AMD graphics only)"
+      },
+      {
+        "when": {
+          "use": "coding",
+          "style": "keyboard"
+        },
+        "result": "omarchy",
+        "alt": "popos"
+      },
+      {
+        "when": {
+          "use": "coding",
+          "tinker": "enjoy"
+        },
+        "result": "nixos",
+        "alt": "Fedora Atomic"
+      },
+      {
+        "when": {
+          "use": "coding"
+        },
+        "result": "fedora",
+        "alt": "ubuntu"
+      },
+      {
+        "when": {
+          "use": "everyday",
+          "tinker": "enjoy"
+        },
+        "result": "arch",
+        "alt": "openSUSE Tumbleweed"
+      },
+      {
+        "when": {
+          "use": "everyday",
+          "style": "keyboard"
+        },
+        "result": "popos",
+        "alt": "Fedora KDE"
+      },
+      {
+        "when": {
+          "use": "everyday",
+          "tinker": "none"
+        },
+        "result": "mint",
+        "alt": "zorin"
+      },
+      {
+        "when": {
+          "use": "everyday"
+        },
+        "result": "ubuntu",
+        "alt": "elementary"
+      }
+    ],
+    "_note": "Rules are checked top to bottom; the first match wins. Result texts are in content/copy.md section 9."
+  }
+}

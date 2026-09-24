@@ -3,7 +3,10 @@
 A single long-scroll, static guide to Linux in 2026 (18 sections, see the page map in `content/landing.md`), styled as Soft UI / neumorphism.
 
 ## Source files (read these before building)
-- `design.md`: visual system (tokens, shadows, components, accessibility rules). Follow it exactly.
+- `brand.md`: logo (dLD), amber accent, typefaces, image brief. Overrides `design.md` for color, type and logo.
+- `design.md`: visual system (tokens, shadows, components, layout, motion, accessibility). Follow it exactly.
+- **Figma file**: the approved visual design. The code implements it.
+- `data/distros.json`: single source for distro facts and the finder rules.
 - `content/copy.md`: **final copy for every section**, including microcopy, alt text and the 404 page. Use it word for word; don't invent copy or numbers.
 - `content/landing.md`: layout, visuals and interaction notes for each section.
 - `research/distros-2026.md`: fact base with sources. Every fact on the page must come from here.
@@ -16,7 +19,8 @@ A single long-scroll, static guide to Linux in 2026 (18 sections, see the page m
   assets/css/tokens.css     # design.md tokens as CSS custom properties
   assets/css/main.css       # layout + components
   assets/js/main.js         # theme toggle, keycap press, timeline, distro finder
-  assets/fonts/             # self-hosted Inter (woff2)
+  data/distros.json         # distro facts + finder rules
+  assets/fonts/             # self-hosted Inter + JetBrains Mono (woff2)
   assets/img/               # og-image.png, favicon.svg, screenshots
   ```
 - Run locally: `python3 -m http.server 8000`, then open http://localhost:8000
@@ -25,7 +29,7 @@ A single long-scroll, static guide to Linux in 2026 (18 sections, see the page m
 ## Rules
 - Semantic HTML (`header`, `nav`, `main`, `section` with headings, `footer`). One `h1`.
 - Mobile-first. Test at 360, 768, 1280 and 1920px wide. No horizontal scroll.
-- Light and dark themes: respect `prefers-color-scheme`, and let the manual toggle override it (stored in localStorage inside try/catch).
+- Light theme is the default. Dark theme: respect `prefers-color-scheme`, and let the manual toggle override it (stored in localStorage inside try/catch).
 - Support `prefers-reduced-motion`, `prefers-contrast: more` and `forced-colors`.
 - The page works without JS: finder answers fall back to a static table, and the timeline to a list.
 - No trackers, no external scripts. Fonts are self-hosted.

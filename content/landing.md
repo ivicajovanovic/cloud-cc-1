@@ -58,23 +58,14 @@ Theme switch (light/dark) drawn as a real toggle.
 
 ## 2. Hero (`#top`)
 
-**Eyebrow:** Linux in 2026 · Updated September 2026
+> Final copy: `content/copy.md` §2. The design is in Figma (`04 Hero · Desktop 1440` / `Mobile 390`).
 
-**Headline (h1):** Linux had a big year. Find the version that fits how you work.
+**Audience:** people who have never used Linux. No version numbers, jargon or distro abbreviations in the hero.
 
-**Subhead:** Ubuntu went Wayland-only, Omarchy rebuilt its desktop, Valve started selling a Linux PC, and Rust moved into the kernel. This guide explains what changed, compares the main distros, and walks you through switching.
+**Layout (desktop):** copy column on the left (eyebrow, h1, subhead, two buttons). On the right, a raised **choice panel**: "What matters to you?", six icon keys in a 3×2 grid, and an inset suggestion line underneath. Four readouts sit in a row below.
+**Layout (mobile):** copy first, full-width buttons, then the choice panel (80px keys, labels wrap to two lines), then the readouts stacked.
 
-**Buttons:** Find your distro → `#finder` · Compare distros → `#compare`
-
-**Visual:** a row of large keycaps with monograms (Ub, Om, Fe, Po, Mi, De). Pressing one sinks it and jumps to that profile.
-
-**Key numbers strip** (four flat readouts in inset wells, each with a source footnote):
-- **7.0**: Linux kernel version, released April 12, 2026 *[R§1]*
-- **2031**: Ubuntu 26.04 LTS standard support ends *[R§2]*
-- **30,006**: Steam games rated Verified or Playable on Steam Deck (Aug 2026) *[R§11, secondary: recheck]*
-- **3.90%**: Linux share of Steam users, August 2026 (record 5.33% in March) *[R§11]*
-
----
+**Interaction:** pressing a key sinks it (inset shadow), lights its yellow indicator dot and updates the suggestion line ("Suggestion: Linux Mint · See why"). "See why" jumps to that distro's profile. Only one key is pressed at a time. Keys are real `<button>`s with `aria-pressed`, and the suggestion line is an `aria-live="polite"` region.
 
 ## 3. Why now (`#why-now`)
 

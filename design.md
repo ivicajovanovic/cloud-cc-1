@@ -45,7 +45,7 @@ The style became popular around 2019–2020 through Dribbble concept work (Alexa
 
 ## 3. Design tokens
 
-> **Project note:** for Distro L. Desk, the accent (`--accent`) is replaced by the **amber** tokens in `brand.md` §3, and the typefaces by `brand.md` §4. Every other token below still applies.
+> **Project note:** for Distro L. Desk, the accent (`--accent`) is replaced by the **yellow** tokens in `brand.md` §3, and the typefaces by `brand.md` §4. Every other token below still applies.
 
 ### 3.1 Color: light theme (default)
 
@@ -395,17 +395,17 @@ Neumorphism's biggest criticism is accessibility: controls defined only by faint
 
 | Component | Used in | Depth | Notes |
 |---|---|---|---|
-| **Keycap** | Hero, distro profiles | Raised `2` → inset on press | Square 88px (desktop) / 64px (mobile), radius 20px. JetBrains Mono monogram, amber indicator dot when active |
+| **Keycap** | Hero, distro profiles | Raised `2` → inset on press | Square 88px (desktop) / 64px (mobile), radius 20px. JetBrains Mono monogram, yellow indicator dot when active |
 | **Readout** | Hero numbers, gaming stats | Inset well | Mono 700 figure + Inter label + source superscript |
-| **Switch row** | Finder | Inset track + raised thumb | Segmented control with 2–4 options; active option gets amber text |
-| **Result lamp** | Finder result | Raised card with a round amber "lamp" | The lamp lights up (fill fades in) when a result appears |
+| **Switch row** | Finder | Inset track + raised thumb | Segmented control with 2–4 options; active option gets yellow text |
+| **Result lamp** | Finder result | Raised card with a round yellow "lamp" | The lamp lights up (fill fades in) when a result appears |
 | **Timeline slider** | Calendar | Inset track, raised thumb | Ticks for each release; planned releases get hollow ticks |
 | **Profile card** | Distros | Raised `3` | Expands in place; the facts row is a flat 4-column definition list |
 | **Mini card** | More distros | Flat on surface, with a thin `--control-edge` border | Deliberately flat: there are many of them |
 | **Data table** | Compare, Apps | Flat, in an inset container | Sticky first column, zebra rows with 4% ink, filter chips above (raised → inset when active) |
-| **Callout** | Why now, Gaming, Hardware, Switch | Flat, 4px amber left bar | Icon + title + text |
+| **Callout** | Why now, Gaming, Hardware, Switch | Flat, 4px yellow left bar | Icon + title + text |
 | **Desktop schematic** | Desktops | Inset "screen" with flat shapes | Drawn in CSS/SVG, 16:10 |
-| **Step rail** | Switch guide | Inset vertical track that fills with amber as you scroll | Numbered raised dots |
+| **Step rail** | Switch guide | Inset vertical track that fills with yellow as you scroll | Numbered raised dots |
 | **Accordion** | FAQ, source list | Raised when closed, inset when open | Chevron rotates |
 | **Glossary search** | Glossary | Inset input | Results filter live; count announced |
 | **Source mark** | Everywhere | Flat | Superscript mono number links to the source list |

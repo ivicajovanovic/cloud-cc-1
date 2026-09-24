@@ -21,11 +21,11 @@ This is the **approved, ready-to-publish text** for every part of the site. The 
 **Site name:** Distro L. Desk
 **Tagline:** An independent guide to Linux in 2026.
 
-**`<title>` (home):** Distro L. Desk: an independent guide to Linux in 2026
+**`<title>` (home):** Distro L. Desk: a friendly, independent guide to Linux in 2026
 **Meta description:** What changed in Linux in 2026, how Ubuntu 26.04, Omarchy 4, Fedora 44, COSMIC and ten other distros compare, and how to switch safely. Sourced and independent.
-**Open Graph title:** Linux had a big year. Find the version that fits how you work.
+**Open Graph title:** Give your computer a fresh start with Linux.
 **Open Graph description:** A sourced guide to the 2026 Linux releases, with a comparison table, a distro finder and a step-by-step switching guide.
-**OG image alt:** A row of soft, raised keyboard keys labelled with Linux distro initials on a pale grey surface.
+**OG image alt:** Six soft, raised keys with simple icons on a pale grey surface, one with a yellow indicator light.
 
 **Skip link:** Skip to main content
 **Theme toggle (aria-label):** Switch between light and dark theme
@@ -61,34 +61,42 @@ This is the **approved, ready-to-publish text** for every part of the site. The 
 
 ## 2. Hero (`#top`)
 
-**Eyebrow:** Linux in 2026 · Updated September 2026
+The hero speaks to people who have never used Linux: no version numbers, jargon or distro abbreviations. The technical detail starts from section 3 down.
 
-**Headline (h1):** Linux had a big year. Find the version that fits how you work.
+**Eyebrow:** A friendly guide to Linux · Updated September 2026
+
+**Headline (h1):** Give your computer a fresh start with Linux.
 
 **Subhead:**
-Ubuntu went Wayland-only, Omarchy rebuilt its desktop from scratch, Valve started selling a Linux gaming PC, and Rust became a permanent part of the kernel. This guide explains what changed, compares fourteen distros side by side, and walks you through switching one step at a time.
+Linux is a free alternative to Windows and macOS. It runs on most computers, including many that can't upgrade to Windows 11, and it gets regular security updates. This guide helps you choose a version, try it without risk and switch one step at a time.
 
-**Primary button:** Find your distro
-**Secondary button:** Compare distros
+**Primary button:** Help me choose → `#finder`
+**Secondary button:** How to switch → `#switch`
 
-**Keycap row caption (screen readers only):** Jump to a distro profile
-**Keycap labels (visible monogram / accessible name):**
-- Ub / Ubuntu 26.04 LTS
-- Om / Omarchy 4
-- Fe / Fedora 44
-- Po / Pop!_OS with COSMIC
-- Mi / Linux Mint
-- De / Debian 13
+**Choice panel**
+- **Heading:** What matters to you?
+- **Keys** (icon + label; pressing one lights its yellow indicator and updates the suggestion line):
 
-**Key numbers strip** (heading, screen readers only: "2026 in four numbers")
+| Key label | Icon (Lucide-style) | Suggestion shown |
+|---|---|---|
+| Feels like Windows | Screen with a taskbar | Linux Mint |
+| Feels like a Mac | Screen with a top bar and dock | elementary OS |
+| Just works | Check mark in a circle | Ubuntu |
+| Older computer | Laptop | Linux Mint Xfce |
+| Gaming | Game controller | Bazzite |
+| Coding | Code brackets | Fedora |
+
+- **Suggestion line:** Suggestion: [Distro] · See why (links to that distro's profile)
+- **Default state (nothing pressed):** Press a key to see a suggestion.
+- **Panel accessible name:** What matters to you? Choose one to see a suggested Linux version.
+
+**Key numbers strip** (heading, screen readers only: "Linux in four facts")
 | Figure | Label | Source |
 |---|---|---|
-| 7.0 | Linux kernel version, released April 12, 2026 | Kernel Newbies |
-| 2031 | Last year of standard support for Ubuntu 26.04 LTS | Ubuntu release notes |
-| 30,006 | Steam games rated Verified or Playable on Steam Deck, August 2026 **[S]** | SteamDB via CommandLinux |
-| 5.33% | Linux share of Steam players in March 2026, a record | Steam Hardware Survey via GamingOnLinux |
-
----
+| Free | Every Linux version in this guide costs nothing to download and use | Official project sites |
+| 2031 | Ubuntu 26.04 gets free security updates until 2031 | Ubuntu release notes |
+| 30,000+ | Steam games rated Verified or Playable on the Linux-based Steam Deck **[S]** | SteamDB via CommandLinux |
+| Oct 2025 | Windows 10 support ended. Linux gives those PCs a supported option | Microsoft, via TechRepublic |
 
 ## 3. Why now (`#why-now`)
 

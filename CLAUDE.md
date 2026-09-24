@@ -3,9 +3,9 @@
 A single long-scroll, static guide to Linux in 2026 (18 sections, see the page map in `content/landing.md`), styled as Soft UI / neumorphism.
 
 ## Source files (read these before building)
-- `brand.md`: logo (dLD), amber accent, typefaces, image brief. Overrides `design.md` for color, type and logo.
+- `brand.md`: logo (dLD, concept A), yellow `#FCC624` accent, typefaces, image brief. Overrides `design.md` for color, type and logo.
 - `design.md`: visual system (tokens, shadows, components, layout, motion, accessibility). Follow it exactly.
-- **Figma file** (https://www.figma.com/design/Zb9Vh2RVRtl3UDGqXeXWdH): the approved visual design. The code implements it. Designed so far: foundations, logo concepts, core components, Hero and Finder (desktop 1440 + mobile 390). The remaining sections follow the same components and rules.
+- **Figma file** (https://www.figma.com/design/Zb9Vh2RVRtl3UDGqXeXWdH): the approved visual design. The code implements it. Designed so far: foundations, final logo, core components, Hero (plain-language version) and Finder (desktop 1440 + mobile 390). The remaining sections follow the same components and rules.
   - The Figma Starter plan allows one variable mode, so dark colors live in a separate `Color (Dark)` collection (`dark/*`). In code, both themes are CSS custom properties.
 - `data/distros.json`: single source for distro facts and the finder rules.
 - `content/copy.md`: **final copy for every section**, including microcopy, alt text and the 404 page. Use it word for word; don't invent copy or numbers.

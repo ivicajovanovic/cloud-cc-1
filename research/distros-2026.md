@@ -215,3 +215,11 @@ News and secondary sources:
 - Flathub, 1M active users: https://docs.flathub.org/blog/over-one-million-active-users-and-growing
 - OSTechNix, Flathub 3B downloads: https://ostechnix.com/flathub-3-billion-downloads/
 - Linux market share caveats: https://pbxscience.com/desktop-linux-reaches-8-88-worldwide-in-august-2026-but-the-surge-comes-with-caveats/
+
+---
+
+## 12. General-knowledge facts used in "What is Linux?" (add sources before launch)
+- Android phones run on the Linux kernel. **[needs source]**
+- The Steam Deck runs SteamOS, which is based on Arch Linux (see §11: SteamOS). Confirmed.
+- Linus Torvalds started Linux in 1991, and the name comes from his first name. **[needs source]**
+- Linux is open source: anyone can read, change and share the code. **[needs source]**

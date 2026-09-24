@@ -1,5 +1,7 @@
 # Landing page: structure, layout and interaction notes
 
+> Section numbers below (after the page map) refer to the **old** order and are kept for their layout notes. The **page map above is the current order**; `content/copy.md` uses the new numbering.
+
 > **The final text lives in `content/copy.md`.** Where the two files differ, `copy.md` wins. This file covers layout, visuals and behavior; the draft text here is kept only for reference.
 
 **Site name:** *Distro L. Desk*, a nod to Philip K. Dick.
@@ -14,10 +16,37 @@
 
 ---
 
-## Page map (18 sections)
+## Page map (19 sections, beginner-first order)
+
+Most visitors are beginners. Practical questions come first; deep dives for curious and technical readers come after the switching guide.
 
 | # | Section | Anchor | Purpose |
 |---|---|---|---|
+| 1 | Header / sticky index | — | Navigation, theme toggle |
+| 2 | Hero | `#top` | Plain-language hook, "What matters to you?" keys, four facts |
+| 3 | What is Linux? | `#what-is-linux` | **New.** The basics in plain words: free, many versions, try first |
+| 4 | Why now | `#why-now` | Windows 10 end of support, why people are switching |
+| 5 | Help me choose (finder) | `#finder` | Three switches → a suggestion |
+| 6 | Six good places to start | `#distros` | The six main versions, plain summary first |
+| 7 | Will my apps work? | `#apps` | Apps table first, install methods in details |
+| 8 | Can I game on Linux? | `#gaming` | Honest gaming picture |
+| 9 | Will it run on my computer? | `#hardware` | Hardware check |
+| 10 | How to switch | `#switch` | Eight steps |
+| 11 | What's new in 2026 | `#whats-new` | *Deep dive begins.* Six changes, plain line + technical details |
+| 12 | The year in releases | `#calendar` | Timeline slider |
+| 13 | More versions | `#more-distros` | Eight more distros by need |
+| 14 | Compare side by side | `#compare` | Comparison table |
+| 15 | How it looks | `#desktops` | Desktop environments |
+| 16 | How updates work | `#release-models` | LTS, rolling, atomic, declarative |
+| 17 | Glossary | `#glossary` | Plain-language definitions |
+| 18 | FAQ | `#faq` | Beginner questions |
+| 19 | Help, sources, footer | `#help` | Communities, final CTA, sources, legal |
+
+**The section pattern (every section):** a plain-language opening that is always visible (eyebrow, h2, "In short" lead paragraph in `body-lg`), then a **"Show the details"** panel with the technical content. Whether the panel starts open or closed is noted per section in `content/copy.md`.
+
+**Deep-dive divider:** between sections 10 and 11, a quiet flat divider reads: "That's everything you need to get started. Want to go deeper? The rest of the page is for the curious." *(Copy to be added to `copy.md` §11 as its lead-in.)*
+
+---|---|---|---|
 | 1 | Header / sticky index | — | Navigation, theme toggle |
 | 2 | Hero + key numbers | `#top` | Hook, main CTA, four verified facts |
 | 3 | Why now | `#why-now` | Windows 10 end of support, momentum |

@@ -410,6 +410,9 @@ Neumorphism's biggest criticism is accessibility: controls defined only by faint
 | **Glossary search** | Glossary | Inset input | Results filter live; count announced |
 | **Source mark** | Everywhere | Flat | Superscript mono number links to the source list |
 | **Logo** | Header, footer, 404 | Flat | See `brand.md` §2 |
+| **Section opening** | Every section | Flat | Eyebrow (mono) + h2 + "In short" lead paragraph (`body-lg`, max 60ch). Always visible |
+| **Details panel** | Most sections | Summary is a raised pill button ("Show the details" + chevron); open panel content is flat | Native `<details>`/`<summary>`. Open state: button becomes inset, chevron rotates. Content is in the HTML either way, for search engines and find-in-page |
+| **Deep-dive divider** | Between §10 and §11 | Flat | Thin `--control-edge` rule with a centered one-line note |
 
 ## 13. Flat vs. soft, per section
 

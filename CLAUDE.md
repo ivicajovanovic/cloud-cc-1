@@ -1,6 +1,6 @@
 # Distro L. Desk: landing page
 
-A single long-scroll, static guide to Linux in 2026 (18 sections, see the page map in `content/landing.md`), styled as Soft UI / neumorphism.
+A single long-scroll, static, **beginner-first** guide to Linux in 2026 (19 sections, see the page map in `content/landing.md`), styled as Soft UI / neumorphism. Most visitors are non-technical: every section opens in plain language, with technical detail in a "Show the details" panel.
 
 ## Source files (read these before building)
 - `brand.md`: logo (dLD, concept A), yellow `#FCC624` accent, typefaces, image brief. Overrides `design.md` for color, type and logo.

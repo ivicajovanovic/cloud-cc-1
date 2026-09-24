@@ -1,10 +1,11 @@
-# Distro Desk: landing page
+# Distro L. Desk: landing page
 
 A single long-scroll, static guide to Linux in 2026 (18 sections, see the page map in `content/landing.md`), styled as Soft UI / neumorphism.
 
 ## Source files (read these before building)
 - `design.md`: visual system (tokens, shadows, components, accessibility rules). Follow it exactly.
-- `content/landing.md`: page structure and approved copy. Don't invent copy or numbers.
+- `content/copy.md`: **final copy for every section**, including microcopy, alt text and the 404 page. Use it word for word; don't invent copy or numbers.
+- `content/landing.md`: layout, visuals and interaction notes for each section.
 - `research/distros-2026.md`: fact base with sources. Every fact on the page must come from here.
 
 ## Stack

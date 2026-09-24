@@ -1,6 +1,8 @@
-# Landing page: structure and copy (draft 2, expanded)
+# Landing page: structure, layout and interaction notes
 
-**Working name:** *Distro Desk*. This is a placeholder.
+> **The final text lives in `content/copy.md`.** Where the two files differ, `copy.md` wins. This file covers layout, visuals and behavior; the draft text here is kept only for reference.
+
+**Site name:** *Distro L. Desk*, a nod to Philip K. Dick.
 **What the site is:** an independent, fact-checked guide to Linux in 2026: what changed, which distros matter, and how to switch.
 **Main visitor action:** find a distro that fits → go to its official download page.
 **Secondary actions:** understand the options (compare, desktops, apps, gaming) → follow the switching guide.
@@ -39,7 +41,7 @@
 
 ## 0. Head / SEO
 
-- `<title>`: Distro Desk: a guide to Linux in 2026
+- `<title>`: Distro L. Desk: a guide to Linux in 2026
 - Meta description: What changed in Linux in 2026, how Ubuntu 26.04, Omarchy 4, Fedora 44, COSMIC and others compare, and how to switch safely. Independent and sourced.
 - Open Graph image: hero keycaps on the soft surface, 1200×630.
 - Structured data: `FAQPage` JSON-LD for §17.
@@ -452,7 +454,7 @@ Accordion (raised when closed, inset when open).
 **Sources:** an expandable list of every source from the research file, grouped by topic. Each on-page number links to its source.
 
 **Footer:**
-- "Distro Desk is an independent guide. It is not affiliated with Canonical, the Fedora Project, Red Hat, System76, 37signals, Linux Mint, Debian, SUSE, Valve, Zorin, elementary or the NixOS Foundation."
+- "Distro L. Desk is an independent guide. It is not affiliated with Canonical, the Fedora Project, Red Hat, System76, 37signals, Linux Mint, Debian, SUSE, Valve, Zorin, elementary or the NixOS Foundation."
 - "Linux® is the registered trademark of Linus Torvalds in the U.S. and other countries. Other names are trademarks of their respective owners."
 - "Last updated: September 2026 · Report a correction" (mailto or GitHub issue link).
 

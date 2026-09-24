@@ -451,3 +451,18 @@ Depth is only for things you touch or that group content. Everything else stays 
 | Logo cursor (concept C only) | One blink on load | 1 blink |
 
 With `prefers-reduced-motion`: state changes are instant, and there are no scale, rise or blink effects.
+
+## 15. Redesigning in Figma (owner workflow)
+
+The site owner can redesign any section in the Figma file. The file has what's needed:
+
+- **Layout grid styles:** `Desktop 1440 · 12 columns` (24px gutters, 120px margins), `Tablet 768 · 8 columns` (24px gutters, 32px margins), `Mobile 390 · 4 columns` (16px gutters, 16px margins), each with a hidden 8px baseline grid. Toggle with Ctrl/Cmd + G.
+- **Guide lines** on every page frame at the content edges (desktop x = 120 and 1320, plus the center at 720; mobile x = 16 and 374).
+- **The `00 Read me · How to redesign` board** with the rules:
+  - Keep using the color variables, text styles, effect styles and components, so the code can match.
+  - Yellow `#FCC624` is for fills only; yellow text and lines use `#735500`; yellow dots get a dark outline.
+  - Text stays flat; soft depth only for controls and grouping cards.
+  - Touch targets ≥ 44px; text contrast ≥ 4.5:1.
+  - Free to change: layout, order within a section, sizes, spacing, icons, illustrations, the flat/soft balance, and wording (then tell Claude so `content/copy.md` is updated).
+- **Naming:** `NN Section name · Desktop 1440` / `· Mobile 390`, numbered from the page map in `content/landing.md`. Foundation boards are lettered (A · Foundations, B · Logo, C · Components).
+- **Handoff:** add **"✓ Ready"** to a frame's name when it's ready to be built.

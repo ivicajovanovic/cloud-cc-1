@@ -5,7 +5,7 @@ A single long-scroll, static, **beginner-first** guide to Linux in 2026 (19 sect
 ## Source files (read these before building)
 - `brand.md`: logo (dLD, concept A), yellow `#FCC624` accent, typefaces, image brief. Overrides `design.md` for color, type and logo.
 - `design.md`: visual system (tokens, shadows, components, layout, motion, accessibility). Follow it exactly.
-- **Figma file** (https://www.figma.com/design/Zb9Vh2RVRtl3UDGqXeXWdH): the approved visual design. The code implements it. Designed so far: foundations, final logo, core components, Hero (plain-language version) and Finder (desktop 1440 + mobile 390). The remaining sections follow the same components and rules.
+- **Figma file** (https://www.figma.com/design/Zb9Vh2RVRtl3UDGqXeXWdH): the approved visual design. The code implements it. Designed so far (desktop 1440 + mobile 390): foundations, final logo, core components (keycap, button, readout, theme toggle, **Details toggle**), Hero (plain-language), What is Linux? (the section-opening + details pattern), Finder, and the distro card (closed and open). The remaining sections follow the same components and rules.
   - The Figma Starter plan allows one variable mode, so dark colors live in a separate `Color (Dark)` collection (`dark/*`). In code, both themes are CSS custom properties.
 - `data/distros.json`: single source for distro facts and the finder rules.
 - `content/copy.md`: **final copy for every section**, including microcopy, alt text and the 404 page. Use it word for word; don't invent copy or numbers.

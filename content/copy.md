@@ -336,6 +336,21 @@ Omarchy 4 asks you to choose a default AI coding agent, such as Claude Code, Cod
 - With the mouse and overlapping windows
 - With the keyboard and tiled windows
 
+**Switch labels (short, shown on the switches) with helper text (shown under the switch for the selected option):**
+| Question | Switch label | Helper text |
+|---|---|---|
+| 1 | Not at all | I want it to work out of the box |
+| 1 | A little | I'll change a few settings |
+| 1 | I enjoy it | I like to build my own setup |
+| 2 | Everyday | Web, email, documents, video |
+| 2 | Coding | Writing and running code |
+| 2 | Gaming | Steam and other game launchers |
+| 2 | Servers | Running services and websites |
+| 3 | Mouse | With the mouse and overlapping windows |
+| 3 | Keyboard | With the keyboard and tiled windows |
+
+**Result eyebrow:** Your suggestion
+
 **Before answering (result area):** Flip the three switches to see a suggestion.
 **Result heading pattern:** Try [Distro]
 **Result buttons:** Official site · Read the profile

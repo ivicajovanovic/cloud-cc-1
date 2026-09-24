@@ -94,7 +94,7 @@ Built on `design.md` §3 and replacing its blue accent with amber. Contrast rati
 | Data and labels | **JetBrains Mono** (OFL) | 400, 600, 700 | Version numbers, dates, key numbers, eyebrows, commands, table figures, monograms on keys |
 
 - Self-host both as woff2 subsets (Latin + Latin Extended).
-- Eyebrows (small labels above headings): JetBrains Mono 600, 12–13px, uppercase, +0.06em tracking, `--ink-muted`.
+- Eyebrows (small labels above headings): JetBrains Mono Medium (the family has no SemiBold), 12–13px, uppercase, +0.06em tracking, `--ink-muted`.
 - Key numbers (e.g. "7.0", "2031"): JetBrains Mono 700, 40–56px, with tabular figures.
 - Commands (`apt`, `dnf`, `sudo-rs`): JetBrains Mono in an inset "chip".
 - Everything else follows the type scale in `design.md` §3.5.

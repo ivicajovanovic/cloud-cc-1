@@ -107,7 +107,7 @@ Linux is a free alternative to Windows and macOS. It runs on most computers, inc
 |---|---|---|
 | Free | Every Linux version in this guide costs nothing to download and use | Official project sites |
 | 2031 | Ubuntu 26.04 gets free security updates until 2031 | Ubuntu release notes |
-| 30,000+ | Steam games rated Verified or Playable on the Linux-based Steam Deck **[S]** | SteamDB via CommandLinux |
+| 30,000+ | Steam games rated Verified or Playable on the Linux-based Steam Deck | SteamDB via GamingOnLinux and PC Gamer |
 | Oct 2025 | Windows 10 support ended. Linux gives those PCs a supported option | Microsoft, via TechRepublic |
 
 ---
@@ -129,11 +129,11 @@ Linux is a free alternative to Windows and macOS. It runs on most computers, inc
 **The details** (collapsed by default)
 - **Distro** is short for *distribution*: a complete package made of the Linux **kernel** (the core that talks to your hardware), a **desktop** (what you see and click), apps and tools.
 - Different teams build different distros. Canonical makes Ubuntu, the Fedora Project makes Fedora, a small community team makes Linux Mint, and so on. They share code, which is why most apps work on all of them.
-- The name "Linux" comes from its creator, Linus Torvalds, who started it in 1991.
-- Linux is **open source**: anyone can read the code, fix it and share improvements. That's why it's free.
+- Linux is named after its creator, Linus Torvalds, who announced it on August 25, 1991.
+- Linux is **open source** (under the GPL license since 1992): anyone can read the code, fix it and share improvements. That's why it's free.
 - Links to glossary: Distro · Kernel · Desktop environment
 
-**Fact note for the research file:** "Android and the Steam Deck run on Linux" and "Linus Torvalds started it in 1991" are general knowledge. Add a source for each to `research/distros-2026.md` before launch.
+**Sources:** see `research/distros-2026.md` §12–13 (verified September 24, 2026).
 
 ---
 
@@ -366,13 +366,13 @@ You may see claims that Linux now runs on 5%, 9% or even 10% of desktops. These 
 
 **The details** (collapsed by default; the "Before you switch" callout stays visible)
 
-Steam includes Proton, a compatibility layer that runs Windows games on Linux with no setup. As of August 2026, 30,006 games **[S]** were rated Verified or Playable on the Steam Deck, which runs the same technology. Valve now sells the Steam Machine, a living-room PC running SteamOS, and supports SteamOS on any desktop PC with an AMD graphics card.
+Steam includes Proton, a compatibility layer that runs Windows games on Linux with no setup. As of August 2026, 30,006 games were rated Verified or Playable on the Steam Deck, which runs the same technology. Valve now sells the Steam Machine, a living-room PC running SteamOS, and supports SteamOS on any desktop PC with an AMD graphics card.
 
 **Subheading (h3):** What works well
 Most single-player games on Steam. Epic and GOG games through the Heroic launcher. Emulators. Controllers, including Xbox, PlayStation and Steam controllers.
 
 **Subheading (h3):** What doesn't work yet
-Some popular online multiplayer games, including Battlefield 6, Call of Duty and EA Sports FC 26, refuse to run because their anti-cheat software doesn't support Linux. Easy Anti-Cheat and BattlEye can work on Linux, but each game's developer has to switch that on, and many haven't.
+Some popular online multiplayer games, including Battlefield 6, Call of Duty and EA Sports FC 26, refuse to run because their anti-cheat software doesn't support Linux. Easy Anti-Cheat and BattlEye can work on Linux, but each game's developer has to switch that on, and many haven't. EA says it plans to bring its own anti-cheat to Linux, but hasn't given a date.
 
 **Callout title:** Before you switch
 **Callout body:** Look up the games you play most on ProtonDB and on the GamingOnLinux anti-cheat list. If a must-play online game is marked "Broken", keep Windows alongside Linux for now.
@@ -539,7 +539,7 @@ Omarchy 4 asks you to choose a default AI coding agent, such as Claude Code, Cod
 | June 2026 | KDE Plasma 6.7 | Separate virtual desktops for each monitor, a feature users had requested for years. |
 | June 2026 | SteamOS 3.8 | Valve officially supports SteamOS on any desktop PC with an AMD graphics card. |
 | June 29, 2026 | Steam Machine | Valve's own Linux gaming PC goes on sale. |
-| July 1, 2026 | COSMIC 1.2 **[S]** | The next update to System76's Rust desktop. |
+| July 22, 2026 | COSMIC 1.4 | The latest update to System76's Rust desktop, with dozens of stability fixes. |
 | August 14, 2026 | Omarchy 4 "Quattro" | A rebuilt desktop shell, a 24-color theme system and an installer under 6 GB. |
 | September 12, 2026 | Debian 13.7 | The latest update to Debian's stable release, "trixie". |
 | December 2026 | Linux Mint 23 (planned) | Expected on an Ubuntu 26.04 base, with Wayland support for Cinnamon and a new installer. |
@@ -595,7 +595,7 @@ Omarchy 4 asks you to choose a default AI coding agent, such as Claude Code, Cod
 | Distro | Current version | Based on | Default desktop | How it updates | Software tools | Support | Best for | Filters |
 |---|---|---|---|---|---|---|---|---|
 | Ubuntu | 26.04 LTS | Debian | GNOME 50 | Fixed, long-term support | apt, Snap | Until April 2031 | Most people, servers | Beginner, Developers, Servers |
-| Omarchy | 4.0 | Arch Linux | Hyprland | Rolling | pacman, AUR | Rolling | Developers, keyboard users | Developers |
+| Omarchy | 4.0.4 | Arch Linux | Hyprland | Rolling | pacman, AUR | Rolling | Developers, keyboard users | Developers |
 | Fedora | 44 | Independent | GNOME 50 or KDE | Fixed, about every 6 months | dnf5, Flatpak | About 13 months | Developers, new software | Developers |
 | Pop!_OS | 24.04 | Ubuntu | COSMIC | Fixed | apt, Flatpak | Ubuntu 24.04 base | Tiling, NVIDIA users | Beginner, Developers |
 | Linux Mint | 22.x (23 planned) | Ubuntu | Cinnamon | Fixed | apt, Flatpak | Ubuntu LTS base | Windows switchers | Beginner |
@@ -805,7 +805,7 @@ You write down what your system should contain, and the distro builds exactly th
 **Independence statement:** Distro L. Desk is an independent guide. It is not affiliated with or endorsed by Canonical, the Fedora Project, Red Hat, System76, 37signals, Linux Mint, Debian, SUSE, Valve, Zorin, elementary or the NixOS Foundation.
 **Trademark notice:** Linux® is the registered trademark of Linus Torvalds in the U.S. and other countries. All other names are trademarks of their respective owners.
 **Updated line:** Last updated September 2026.
-**Corrections link:** Spotted a mistake? [Report a correction]
+**Corrections link:** Spotted a mistake? Email us at [corrections email address] (a `mailto:` link with the subject "Correction: Distro L. Desk")
 **Footer navigation:** What's new · Distros · Compare · Find yours · Switch · FAQ · Sources
 **Colophon:** Built with plain HTML and CSS, with no trackers and no cookies.
 **Copyright:** © 2026 Distro L. Desk

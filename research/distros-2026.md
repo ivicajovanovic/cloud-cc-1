@@ -16,11 +16,12 @@ Some official sites (omarchy.org, canonical.com, fedoramagazine.org, phoronix.co
 | Date | Event | Confidence |
 |---|---|---|
 | 2025-12-11 | Pop!_OS 24.04 LTS released with the COSMIC desktop as default | Confirmed |
-| 2026-03-03 | Pop!_OS 24.04 upgrade opened to existing users | Secondary |
+| 2026-03-03 | Pop!_OS 24.04 upgrade opened to existing users | Secondary (not used on the page) |
 | 2026-04-12 | Linux kernel 7.0 released | Confirmed |
 | 2026-04-23 | Ubuntu 26.04 LTS "Resolute Raccoon" released | Confirmed |
 | 2026-04-28 | Fedora Linux 44 released (delayed from April 14) | Confirmed |
-| 2026-07-01 | COSMIC desktop 1.2.0 released | Secondary |
+| 2026-07-01 | COSMIC desktop 1.2.0 released | Confirmed |
+| 2026-07-22 | COSMIC Epoch 1.4 released (latest stable at time of writing) | Confirmed (Phoronix, LinuxCompatible) |
 | 2026-08 | Ubuntu 26.04.1 LTS point release | Confirmed |
 | 2026-08-14 | Omarchy 4.0 "Quattro" released | Confirmed (GitHub release) |
 | 2026-09-12 | Debian 13.7 point release (Debian 13 "trixie") | Confirmed |
@@ -51,7 +52,7 @@ Some official sites (omarchy.org, canonical.com, fedoramagazine.org, phoronix.co
 
 - Created by **David Heinemeier Hansson (DHH)**, co-founder of 37signals/Basecamp and creator of Ruby on Rails.
 - Built on **Arch Linux** with the **Hyprland** tiling Wayland compositor. Keyboard-driven and opinionated. Self-described as "beautiful, fun & agentic Linux".
-- **4.0.0 released August 14, 2026.** Patch releases 4.0.1 (security fixes, from the new Omarchy Security team) and 4.0.3 followed.
+- **4.0.0 released August 14, 2026.** Patch releases followed: 4.0.1 (security fixes from the new Omarchy Security team), 4.0.3, and **4.0.4 (September 2026), which makes Omarchy's own tuned kernel (`linux-omarchy`) the default**. Confirmed (GitHub release, Linuxiac). The next major release is being developed as "Quattro RS" (Secondary).
 - **The whole desktop shell was rewritten in Quickshell.** Bar, launcher, menus, notifications, on-screen displays, control panels, lock screen and polkit agent now run as one long-running process with a plugin architecture. It replaces Waybar, Walker, Mako, SwayOSD, hyprlock, hypridle, swaybg and polkit-gnome.
 - Omarchy is now shipped as **pacman packages** instead of a git checkout, so updates and user changes are safer.
 - Hyprland config moved to **Lua** (Hyprland 0.56 compatible).
@@ -187,7 +188,7 @@ News and secondary sources:
 
 ### Gaming
 - **Steam Hardware Survey, August 2026:** Linux **3.90%** (record **5.33% in March 2026**). SteamOS is about 21% of Linux Steam users. Confirmed (GamingOnLinux, Phoronix).
-- **Steam Deck ratings (SteamDB, Aug 31, 2026):** 8,939 Verified, 21,067 Playable, **30,006 Verified or Playable** in total. Secondary.
+- **Steam Deck ratings (SteamDB, Aug 31, 2026):** about 8,939 Verified and 21,067 Playable, **30,006 Verified or Playable** in total. **Confirmed** (GamingOnLinux, PC Gamer, KitGuru, PC Guide: "nearly 9,000 officially Verified"). Some articles swap the two sub-numbers; only use the total on the page.
 - **Anti-cheat is the main blocker:** Easy Anti-Cheat and BattlEye support Proton, but only if the game's developer turns it on. Several big multiplayer titles (e.g. Battlefield 6, Call of Duty, EA Sports FC 26) don't run. Check the GamingOnLinux anti-cheat list or ProtonDB before switching.
 
 ### Why people are switching
@@ -219,7 +220,51 @@ News and secondary sources:
 ---
 
 ## 12. General-knowledge facts used in "What is Linux?" (add sources before launch)
-- Android phones run on the Linux kernel. **[needs source]**
+- Android phones run on the Linux kernel. **Confirmed** (source.android.com)
 - The Steam Deck runs SteamOS, which is based on Arch Linux (see §11: SteamOS). Confirmed.
-- Linus Torvalds started Linux in 1991, and the name comes from his first name. **[needs source]**
-- Linux is open source: anyone can read, change and share the code. **[needs source]**
+- Linus Torvalds announced Linux on August 25, 1991; it's named after him. **Confirmed** (XDA, Linux.com)
+- Linux is open source (GPL license since 1992): anyone can read, change and share the code. **Confirmed**
+
+---
+
+## 13. Fact check, September 24, 2026 (online verification)
+
+| Claim | Result | Sources |
+|---|---|---|
+| 30,006 Steam games Verified or Playable on Steam Deck (Aug 2026) | **Confirmed** (total). Sub-split corrected: ~8,939 Verified, ~21,067 Playable | GamingOnLinux, PC Gamer, PC Guide, KitGuru |
+| COSMIC 1.2 on July 1, 2026 | **Confirmed**, but no longer the latest: **COSMIC 1.4 on July 22, 2026** | Linux Adictos; Phoronix; LinuxCompatible |
+| Pop!_OS 24.04 LTS + COSMIC on December 11, 2025 | **Confirmed** | OMG! Ubuntu, 9to5Linux, System76 blog |
+| Ubuntu 26.04 LTS on April 23, 2026, 5 years of free security updates | **Confirmed** | Ubuntu announce list, Canonical |
+| Linux Mint 23 planned for December 2026 | **Confirmed as planned**; betas expected around Sep–Oct | GamingOnLinux, 9to5Linux, Mint forums |
+| Linux Mint disables Snap by default | **Confirmed** | Linux Mint User Guide |
+| Fedora: new release about every 6 months, each supported about 13 months | **Confirmed** | Fedora Release Life Cycle |
+| Android runs on the Linux kernel | **Confirmed** | source.android.com (Kernel overview) |
+| Linus Torvalds announced Linux on August 25, 1991; named after him; GPL (open source) since 1992 | **Confirmed** | XDA, Linux.com, History of Linux |
+| Battlefield 6 and Call of Duty don't run on Linux/Steam Deck | **Confirmed**. EA says it plans Linux/Proton support for its Javelin anti-cheat, with no date | ProtonDB, Tom's Hardware, GamingOnLinux, EA forums |
+| Steam Machine went on sale around June 29, 2026 from US$1,049 | **Confirmed** (purchase invitations from the week of June 29) | Dexerto, SlashGear |
+| Omarchy latest version | **4.0.4** (September 2026) | GitHub releases, Linuxiac |
+
+**Not used on the page (left unverified on purpose):** CachyOS share of Linux Steam users, Flathub 4.3 billion downloads, Herdr details, "post-quantum defaults" in Ubuntu 26.04, StatCounter market share.
+
+**Sources (fact check):**
+- https://www.gamingonlinux.com/2026/08/steam-deck-steamos-hit-over-30-000-verified-playable-games/
+- https://www.pcgamer.com/hardware/handheld-gaming-pcs/30-000-games-are-either-steam-deck-verified-or-at-least-playable-on-valves-handheld/
+- https://www.pcguide.com/news/steam-deck-hits-30000-compatible-games-milestone-with-nearly-9000-officially-verified-by-valve/
+- https://en.linuxadictos.com/cosmic-1-2-arrives-with-key-improvements-for-system76's-rust-desktop.html
+- https://www.phoronix.com/news/COSMIC-Epoch-1.4
+- https://www.linuxcompatible.org/story/system76-releases-cosmic-epoch-140-with-stability-fixes-and-compositor-updates/
+- https://www.omgubuntu.co.uk/2025/12/pop_os-24-04-lts-stable-release
+- https://9to5linux.com/system76-launches-first-stable-release-of-cosmic-desktop-and-pop_os-24-04-lts
+- https://lists.ubuntu.com/archives/ubuntu-announce/2026-April/000323.html
+- https://www.gamingonlinux.com/2026/04/linux-mint-confirm-longer-release-cycles-the-next-release-is-planned-for-christmas-2026/
+- https://linuxmint-user-guide.readthedocs.io/en/latest/snap.html
+- https://docs.fedoraproject.org/en-US/releases/lifecycle/ (Fedora Release Life Cycle)
+- https://source.android.com/docs/core/architecture/kernel
+- https://www.xda-developers.com/on-this-day-in-1991-linus-torvalds-announced-linux/
+- https://www.linux.com/news/linus-torvalds-reflects-25-years-linux/
+- https://www.protondb.com/app/2807960
+- https://www.tomshardware.com/video-games/battlefield-6s-javelin-anti-cheat-secure-boot-requirement-could-kill-its-steam-deck-support
+- https://www.gamingonlinux.com/2025/08/battlefield-6-will-be-a-unplayable-on-linux-systems-due-to-the-anti-cheat/
+- https://www.dexerto.com/gaming/steam-machine-finally-launches-as-valve-reveals-1049-starting-price-3378373/
+- https://github.com/omacom/omarchy/releases/tag/v4.0.4
+- https://linuxiac.com/omarchy-4-0-4-makes-its-custom-linux-kernel-the-default/

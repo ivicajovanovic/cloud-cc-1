@@ -1,6 +1,6 @@
 {
   "_meta": {
-    "asOf": "2026-09",
+    "asOf": "2026-09-24",
     "note": "Single source for the profiles, comparison table and finder. Text must match content/copy.md; facts must match research/distros-2026.md.",
     "recheck": [
       "Support column for fedora, popos, zorin, elementary",
@@ -33,7 +33,7 @@
       "id": "omarchy",
       "name": "Omarchy",
       "monogram": "Om",
-      "version": "4.0",
+      "version": "4.0.4",
       "codename": "Quattro",
       "released": "2026-08-14",
       "base": "Arch Linux",

@@ -1,5 +1,7 @@
 # design.md: Soft UI (Neumorphism)
 
+> **Project direction update (September 2026):** Distro L. Desk now uses a **relaxed Soft UI** style. §16 overrides the neumorphic shadow rules below; everything else (accessibility, spacing, motion, component states) still applies.
+
 This document defines the visual language for our interfaces: **Soft UI**, better known as *neumorphism*. Designers and engineers should both work from it. It covers the principles, design tokens, component recipes, accessibility rules and the do's and don'ts that come from how the style has been used in real products (and from its well-known failures).
 
 > **In one sentence:** controls look like they are pressed out of, or into, the same soft material as the background. A single light source lights them, and they stay legible because we use color, type and contrast where shadow alone can't do the job.
@@ -45,7 +47,7 @@ The style became popular around 2019–2020 through Dribbble concept work (Alexa
 
 ## 3. Design tokens
 
-> **Project note:** for Distro L. Desk, the accent (`--accent`) is replaced by the **yellow** tokens in `brand.md` §3, and the typefaces by `brand.md` §4. Every other token below still applies.
+> **Project note:** for Distro L. Desk, the accent (`--accent`) is replaced by the **blue & espresso** tokens in `brand.md` §3, and the typefaces by `brand.md` §4. Every other token below still applies.
 
 ### 3.1 Color: light theme (default)
 
@@ -395,17 +397,17 @@ Neumorphism's biggest criticism is accessibility: controls defined only by faint
 
 | Component | Used in | Depth | Notes |
 |---|---|---|---|
-| **Keycap** | Hero, distro profiles | Raised `2` → inset on press | Square 88px (desktop) / 64px (mobile), radius 20px. JetBrains Mono monogram, yellow indicator dot when active |
+| **Keycap** | Hero, distro profiles | Raised `2` → inset on press | Square 88px (desktop) / 64px (mobile), radius 20px. JetBrains Mono monogram, `--accent-blue` indicator dot when active (in the relaxed hero, keys are white pills that turn ink when selected) |
 | **Readout** | Hero numbers, gaming stats | Inset well | Mono 700 figure + Inter label + source superscript |
-| **Switch row** | Finder | Inset track + raised thumb | Segmented control with 2–4 options; active option gets yellow text |
-| **Result lamp** | Finder result | Raised card with a round yellow "lamp" | The lamp lights up (fill fades in) when a result appears |
+| **Switch row** | Finder | Inset track + raised thumb | Segmented control with 2–4 options; active option is a white raised segment with ink text |
+| **Result lamp** | Finder result | Raised card with a round `--accent-blue` "lamp" | The lamp lights up (fill fades in) when a result appears |
 | **Timeline slider** | Calendar | Inset track, raised thumb | Ticks for each release; planned releases get hollow ticks |
 | **Profile card** | Distros | Raised `3` | Expands in place; the facts row is a flat 4-column definition list |
 | **Mini card** | More distros | Flat on surface, with a thin `--control-edge` border | Deliberately flat: there are many of them |
 | **Data table** | Compare, Apps | Flat, in an inset container | Sticky first column, zebra rows with 4% ink, filter chips above (raised → inset when active) |
-| **Callout** | Why now, Gaming, Hardware, Switch | Flat, 4px yellow left bar | Icon + title + text |
+| **Callout** | Why now, Gaming, Hardware, Switch | Flat, 4px `--accent-blue` left bar | Icon + title + text |
 | **Desktop schematic** | Desktops | Inset "screen" with flat shapes | Drawn in CSS/SVG, 16:10 |
-| **Step rail** | Switch guide | Inset vertical track that fills with yellow as you scroll | Numbered raised dots |
+| **Step rail** | Switch guide | Inset vertical track that fills with `--accent-blue` as you scroll | Numbered raised dots |
 | **Accordion** | FAQ, source list | Raised when closed, inset when open | Chevron rotates |
 | **Glossary search** | Glossary | Inset input | Results filter live; count announced |
 | **Source mark** | Everywhere | Flat | Superscript mono number links to the source list |
@@ -460,9 +462,39 @@ The site owner can redesign any section in the Figma file. The file has what's n
 - **Guide lines** on every page frame at the content edges (desktop x = 120 and 1320, plus the center at 720; mobile x = 16 and 374).
 - **The `00 Read me · How to redesign` board** with the rules:
   - Keep using the color variables, text styles, effect styles and components, so the code can match.
-  - Yellow `#FCC624` is for fills only; yellow text and lines use `#735500`; yellow dots get a dark outline.
+  - The espresso gradient is for the primary button only; blue text uses `--link` `#1A64B8`; the bright `--accent-blue` is for graphics only (see `brand.md` §3).
   - Text stays flat; soft depth only for controls and grouping cards.
   - Touch targets ≥ 44px; text contrast ≥ 4.5:1.
   - Free to change: layout, order within a section, sizes, spacing, icons, illustrations, the flat/soft balance, and wording (then tell Claude so `content/copy.md` is updated).
 - **Naming:** `NN Section name · Desktop 1440` / `· Mobile 390`, numbered from the page map in `content/landing.md`. Foundation boards are lettered (A · Foundations, B · Logo, C · Components).
 - **Handoff:** add **"✓ Ready"** to a frame's name when it's ready to be built.
+
+## 16. Relaxed Soft UI (current direction, overrides §2–§4 shadows)
+
+Chosen by the site owner from two reference designs: airy, calm, less "3D".
+
+**What changed**
+- **Page:** light grey `#F4F4F4`; no more "everything is the same material".
+- **Depth:** **one gentle drop shadow** per level instead of the two-sided light/dark neumorphic pair.
+
+| Token | Value |
+|---|---|
+| `--shadow-1` | `0 2px 6px rgba(31,42,58,.08)` (pills, small buttons) |
+| `--shadow-2` | `0 6px 18px rgba(31,42,58,.10)` (buttons, cards) |
+| `--shadow-3` | `0 18px 44px rgba(31,42,58,.10)` (large cards, photo cards) |
+| `--inset-1` | `inset 0 1px 3px rgba(31,42,58,.10)` (switch tracks, pressed states) |
+
+- **Cards and pills are white** (`--card`), with 12–24px radius (999px for pills).
+- **Primary button:** espresso→brown gradient, 12px radius, white text. Secondary: white, ink text.
+- **Selected pill / key:** ink fill + white text + icon. Pressed buttons may still use `--inset-1`.
+
+**Layout patterns (from the references)**
+1. **Gradient hero:** centered eyebrow, headline (72/76 desktop, 40/46 mobile, −3.5% tracking, white), white subtitle, a white main button + white text link, and a glassy **screen mockup** (white 35% fill, 1.5px white border, background blur) holding a distro screenshot. The mockup is cut off by the bottom of the hero.
+2. **Alternating split rows:** text column (eyebrow, big headline 46/54 with −3% tracking, muted body, one action) beside an **illustrated blue panel** (628×510 desktop, 24px radius). Rows alternate text-left / panel-left. On mobile: text, then panel.
+3. **Illustrated panels:** `--panel-blue` with 1–2 thin white concentric rings, a soft white radial glow in one corner, and content drawn with white pills (blue `--link` labels), a dashed `--accent-blue` path, tilted white **screenshot cards** (8px white frame, `--shadow-3`, ±5° rotation) and a blue cursor. No stock photos of people.
+4. **Pill rows:** choices as white pills with an icon and label, wrapping and centered.
+
+**Where the patterns are used (Figma)**
+- `02 Hero v3`: gradient hero, "What matters to you?" pill row, number cards.
+- `03 What is Linux v3`: split row 1 (the "many versions, one core" ring diagram) and split row 2 (screenshot cards, "Running from USB").
+- Frames marked `(old)` are the previous neumorphic versions, kept for reference.

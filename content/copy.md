@@ -33,7 +33,7 @@ This is the **approved, ready-to-publish text** for every part of the site. The 
 **Meta description:** New to Linux? A friendly, independent guide to choosing a version, checking your apps and games, and switching safely from Windows or macOS. Updated September 2026.
 **Open Graph title:** Give your computer a fresh start with Linux.
 **Open Graph description:** Pick a Linux version in three questions, check your apps and games, and switch step by step. Free, independent and sourced.
-**OG image alt:** Six soft, raised keys with simple icons on a pale grey surface, one with a yellow indicator light.
+**OG image alt:** The words "Give your computer a fresh start with Linux" on a soft blue-to-peach gradient, above a Linux desktop screenshot.
 
 **Skip link:** Skip to main content
 **Theme toggle (aria-label):** Switch between light and dark theme
@@ -87,7 +87,7 @@ Linux is a free alternative to Windows and macOS. It runs on most computers, inc
 
 **Choice panel**
 - **Heading:** What matters to you?
-- **Keys** (icon + label; pressing one lights its yellow indicator and updates the suggestion line):
+- **Choice pills** (icon + label; the selected pill turns ink with white text and updates the suggestion line):
 
 | Key label | Icon (Lucide-style) | Suggestion shown |
 |---|---|---|
@@ -119,12 +119,20 @@ Linux is a free alternative to Windows and macOS. It runs on most computers, inc
 - **Heading (h2):** What is Linux, in plain words?
 - **In short:** Linux is the software that runs a computer, like Windows or macOS. It's free, anyone can use it, and it already runs Android phones and the Steam Deck. You don't install "Linux" on its own. You pick a ready-made version of it, called a **distro**, which comes with a desktop, apps and settings, a bit like choosing a new phone.
 
-**Three facts (flat cards with an icon each)**
-| Title | Text | Icon |
-|---|---|---|
-| Free, for real | No license, no subscription and no trial. Install it on as many computers as you like. | Tag |
-| Many versions, one core | Each version (distro) looks and feels a little different, but they all share the same core. | Layers |
-| Try before you switch | Run it from a USB stick without touching anything on your computer. | USB stick |
+**Layout:** two split rows (see `design.md` §16).
+
+**Row 1** (text left, illustration right)
+- Uses the eyebrow, heading and "In short" above, plus the "Show the details" button.
+- **Illustration:** a dashed ring of six distro pills (Ubuntu, Linux Mint, Fedora, Pop!_OS, Debian, Omarchy) around a white card reading **"Linux kernel"** (desktop adds a second line: "the shared core").
+- **Illustration alt text:** Six Linux versions (Ubuntu, Linux Mint, Fedora, Pop!_OS, Debian and Omarchy) arranged in a ring around the Linux kernel they all share.
+
+**Row 2** (illustration left, text right)
+- **Eyebrow:** Free, and safe to try
+- **Heading (h3, styled large):** Free to use, and safe to try first.
+- **Body:** Install it on as many computers as you like, at no cost. Better still, you can run it from a USB stick first and see how it feels, without touching anything on your computer.
+- **Button (primary):** How to switch → `#switch`
+- **Illustration:** two tilted screenshot cards (Linux Mint and Ubuntu) and a pill reading **"Running from USB · nothing installed"**.
+- **Illustration alt text:** Two Linux desktops shown as screenshots, with a note that they are running from a USB stick without being installed.
 
 **The details** (collapsed by default)
 - **Distro** is short for *distribution*: a complete package made of the Linux **kernel** (the core that talks to your hardware), a **desktop** (what you see and click), apps and tools.

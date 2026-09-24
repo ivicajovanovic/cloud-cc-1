@@ -94,7 +94,7 @@ Theme switch (light/dark) drawn as a real toggle.
 **Layout (desktop):** copy column on the left (eyebrow, h1, subhead, two buttons). On the right, a raised **choice panel**: "What matters to you?", six icon keys in a 3×2 grid, and an inset suggestion line underneath. Four readouts sit in a row below.
 **Layout (mobile):** copy first, full-width buttons, then the choice panel (80px keys, labels wrap to two lines), then the readouts stacked.
 
-**Interaction:** pressing a key sinks it (inset shadow), lights its yellow indicator dot and updates the suggestion line ("Suggestion: Linux Mint · See why"). "See why" jumps to that distro's profile. Only one key is pressed at a time. Keys are real `<button>`s with `aria-pressed`, and the suggestion line is an `aria-live="polite"` region.
+**Interaction:** selecting a choice pill turns it ink with white text and updates the suggestion line ("Suggestion: Linux Mint · See why"). "See why" jumps to that distro's profile. Only one key is pressed at a time. Keys are real `<button>`s with `aria-pressed`, and the suggestion line is an `aria-live="polite"` region.
 
 ## 3. Why now (`#why-now`)
 

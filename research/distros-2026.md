@@ -157,3 +157,61 @@ News and secondary sources:
 - 9to5Linux, Linux 7.0: https://9to5linux.com/linux-kernel-7-0-officially-released-this-is-whats-new
 - XDA, gaming distros: https://www.xda-developers.com/if-youre-choosing-a-linux-distro-for-gaming-try-these-two-first/
 - Tech2Geek, Bazzite vs CachyOS vs Nobara: https://www.tech2geek.net/linux-gaming-in-2026-bazzite-vs-cachyos-vs-nobara-which-distro-should-you-choose/
+
+---
+
+## 11. Additional research (round 2)
+
+### More distros
+- **Zorin OS 18**: released **October 14, 2025**, the day Windows 10 support ended. Aimed at people coming from Windows: several Windows-like layouts, OneDrive integration, built-in web-app (PWA) tool, improved Windows-app compatibility (Wine). Passed **2 million downloads in under 3 months**, with over three quarters from Windows users (Zorin's own figures). Confirmed.
+- **elementary OS 8.1**: a polished, macOS-like desktop (Pantheon). Wayland is the default "Secure Session". First stable **ARM64** ISO. Blind users can install and set it up entirely with a screen reader. Over 1,100 issues fixed. Confirmed.
+- **openSUSE Leap 16.0**: released **October 1, 2025**. Built from SUSE Linux Enterprise 16 sources, binary-identical at the core. New **Agama** installer replaces YaST's installer. Needs an **x86-64-v2** CPU (roughly 2008 or newer). Yearly minor releases planned until 16.6 in 2031. Confirmed.
+- **openSUSE Tumbleweed**: rolling release. In 2026 snapshots shipped Plasma 6.6.x and GNOME 50. Confirmed.
+- **NixOS 26.05 "Yarara"**: released in May 2026. **Declarative**: the whole system is described in one config file, upgrades are atomic, and you can roll back. **20,442 new packages**, systemd-based initrd by default, **2,842 contributors**. Supported until **2026-12-31**. Confirmed (nixos.org blog).
+- **Arch Linux**: rolling release, build-it-yourself. Often first to ship new desktops (e.g. it was first with KDE Plasma 6.5). Omarchy, CachyOS, EndeavourOS and SteamOS are built on Arch.
+- **SteamOS**: Valve's Arch-based gaming OS. With **SteamOS 3.8 (June 2026)** Valve officially supports any desktop PC **with an AMD GPU**. **Steam Machine** (Valve hardware running SteamOS) released **June 29, 2026**: US$1,049 (512 GB) / US$1,349 (2 TB). Secondary for the prices.
+
+### Desktop environments
+- **GNOME 50 "Tokyo"**: released **March 18, 2026**. VRR and fractional scaling on by default, parental controls with screen-time limits and bedtime, faster thumbnails in Files, hardware-accelerated remote desktop, GTK 4.22. Default in Ubuntu 26.04 and Fedora 44 Workstation. Confirmed (release.gnome.org).
+- **KDE Plasma 6.7**: released **June 2026**. **Per-screen virtual desktops** (a long-requested feature), simultaneous HDR and ICC color profiles, many Wayland improvements before Plasma 6.8 becomes **Wayland-only**, the new "Union" theming engine, the "Air" theme back. Confirmed.
+- **COSMIC** (System76, Rust), **Cinnamon** (Mint, Wayland in progress), **Hyprland** (tiling Wayland compositor used by Omarchy), **Pantheon** (elementary), **Xfce/LXQt** (lightweight: Xubuntu, Lubuntu).
+
+### Hardware requirements
+- **Ubuntu 26.04 Desktop:** 2 GHz dual-core CPU, **6 GB RAM**, 25 GB storage. It's the first minimum-RAM increase since 2019. For older PCs Canonical points to flavors such as **Xubuntu/Lubuntu (2 GB RAM or more)**. Server starts at 1.5 GB RAM and 4 GB storage. Confirmed.
+- **openSUSE Leap 16:** x86-64-v2 CPU.
+- **Omarchy 4:** ISO under 6 GB. Needs a 64-bit x86 PC and is tuned for recent laptops (e.g. Dell XPS 2026).
+
+### Apps and software
+- **Flathub** (the main Flatpak app store): about **4.3 billion total downloads** and **3,542 apps** in 2026. Secondary (single source). Earlier confirmed milestone: 3 billion downloads, and over 1 million active users (Flathub's own blog).
+- Ways to install apps: the distro's software store; native packages (apt, dnf, pacman, zypper); **Flatpak** (works on every distro, sandboxed); **Snap** (Ubuntu); **AppImage** (one file, no install).
+
+### Gaming
+- **Steam Hardware Survey, August 2026:** Linux **3.90%** (record **5.33% in March 2026**). SteamOS is about 21% of Linux Steam users. Confirmed (GamingOnLinux, Phoronix).
+- **Steam Deck ratings (SteamDB, Aug 31, 2026):** 8,939 Verified, 21,067 Playable, **30,006 Verified or Playable** in total. Secondary.
+- **Anti-cheat is the main blocker:** Easy Anti-Cheat and BattlEye support Proton, but only if the game's developer turns it on. Several big multiplayer titles (e.g. Battlefield 6, Call of Duty, EA Sports FC 26) don't run. Check the GamingOnLinux anti-cheat list or ProtonDB before switching.
+
+### Why people are switching
+- **Windows 10 support ended October 14, 2025.** Many PCs can't upgrade to Windows 11 because of its TPM 2.0, Secure Boot and CPU requirements. Linux is a supported way to keep using them. Confirmed.
+- Desktop market share: StatCounter figures swing a lot in 2026 (from ~3% to ~9% worldwide in different months), and a large share of pageviews is "Unknown". **Don't quote a StatCounter share on the page**; the Steam survey is more stable to cite.
+
+### Sources (round 2)
+- openSUSE Leap 16 announcement: https://news.opensuse.org/2025/10/01/next-chapter-opens-with-leap-release/
+- Get Leap 16.0: https://get.opensuse.org/leap/16.0/
+- NixOS 26.05 announcement: https://nixos.org/blog/announcements/2026/nixos-2605/
+- Zorin OS 18: https://blog.zorin.com/2025/10/14/zorin-os-18-has-arrived/
+- TechRepublic, Zorin 2M downloads: https://www.techrepublic.com/article/news-zorin-os-2m-downloads-windows-10-support-ends/
+- elementary OS 8.1: https://blog.elementary.io/os-8-1-available-now/
+- GNOME 50 release notes: https://release.gnome.org/50/
+- OMG! Ubuntu, GNOME 50: https://www.omgubuntu.co.uk/2026/03/gnome-50-released
+- OMG! Ubuntu, Plasma 6.7: https://www.omgubuntu.co.uk/2026/06/kde-plasma-6-7-released
+- KDE Plasma 6.7.1: https://kde.org/announcements/plasma/6/6.7.1/
+- OMG! Ubuntu, Ubuntu 26.04 requirements: https://www.omgubuntu.co.uk/2026/04/ubuntu-2604-system-requriments
+- Hackster, 6 GB RAM: https://www.hackster.io/news/canonical-bumps-ubuntu-26-04-lts-s-system-requirements-now-asks-for-6gb-of-ram-1ccc21e4a370
+- TheSixthAxis, SteamOS 3.8 on AMD PCs: https://www.thesixthaxis.com/2026/06/22/you-can-now-install-steamos-3-8-on-your-standard-gaming-pc-with-amd-gpu/
+- PCGamesN, Steam Machine: https://www.pcgamesn.com/steam-machine/launch
+- GamingOnLinux, Steam survey Aug 2026: https://www.gamingonlinux.com/2026/09/steam-linux-user-share-dips-below-4-percent-for-august-2026/
+- GamingOnLinux, anti-cheat list: https://www.gamingonlinux.com/anticheat/
+- Proton compatibility stats: https://commandlinux.com/statistics/proton-game-compatibility-on-linux/
+- Flathub, 1M active users: https://docs.flathub.org/blog/over-one-million-active-users-and-growing
+- OSTechNix, Flathub 3B downloads: https://ostechnix.com/flathub-3-billion-downloads/
+- Linux market share caveats: https://pbxscience.com/desktop-linux-reaches-8-88-worldwide-in-august-2026-but-the-surge-comes-with-caveats/

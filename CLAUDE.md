@@ -1,6 +1,6 @@
 # Distro Desk: landing page
 
-A single-page, static landing site about modern Linux distros (2026), styled as Soft UI / neumorphism.
+A single long-scroll, static guide to Linux in 2026 (18 sections, see the page map in `content/landing.md`), styled as Soft UI / neumorphism.
 
 ## Source files (read these before building)
 - `design.md`: visual system (tokens, shadows, components, accessibility rules). Follow it exactly.
@@ -31,6 +31,9 @@ A single-page, static landing site about modern Linux distros (2026), styled as 
 - All external links go to **official** project sites, with `rel="noopener"`.
 - No official distro logos until trademark use is approved; use text monograms.
 - No fake testimonials, user counts or benchmark numbers.
+- Long page: sticky section index, expandable panels for deep content, `FAQPage` JSON-LD.
+- Dense data (comparison table, apps table, glossary) stays flat; soft depth is only for controls and cards (`design.md` §6).
+- Every number on the page links to its source in the sources list.
 
 ## Definition of done
 - Lighthouse ≥ 90 in all four categories on mobile.

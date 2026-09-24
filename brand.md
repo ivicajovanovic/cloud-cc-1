@@ -7,21 +7,21 @@ The identity layer on top of `design.md`. Where they differ, **this file wins** 
 | Topic | Decision |
 |---|---|
 | Name | **Distro L. Desk**, a nod to Philip K. Dick |
-| Logo | **Typographic monogram "dLD", concept A (Mirror)**: final |
+| Logo | **Typographic monogram "dLD."** in Geist Bold (concept A, now with a period), paired with a two-line mono label |
 | Default theme | **Light**, with a dark theme via toggle or system preference |
-| Visual style | **Relaxed Soft UI**: airy split layouts, illustrated blue panels, white pills and cards with one gentle drop shadow. The strong two-sided neumorphic shadows are retired (see `design.md` §16) |
+| Visual style | **Contemporary editorial**: a modern digital publication about Linux plus an OS discovery tool. Asymmetric compositions, big display type with serif accents, numbered chapters, thin rules, real desktop screenshots as the main visual. See `design.md` §17 |
 | Distro keys | **Neutral** soft keycaps with text monograms; no distro brand colors or logos |
 | Design tool | **Figma**. The code implements the Figma file. |
 | Images | **Provided by the site owner** (see §6 for the brief) |
-| Palette | **Relaxed blue & espresso** (replaces yellow, chosen by the site owner from two reference designs): soft grey page, dusty-blue panels, espresso-to-brown buttons, a blue accent, and a blue-to-peach hero gradient. See §3 |
-| Typefaces | **Inter** + **JetBrains Mono**: final |
+| Palette | **Editorial warm & blue** (September 2026): warm off-white canvas, charcoal ink, one identity blue, mist panels, peach only as a soft glow. See §3 |
+| Typefaces | **Geist** (UI and text, ~85–90%) · **Instrument Serif** (italic accents in headlines, big figures) · **IBM Plex Mono** (labels, numbering, versions). Replace Inter and JetBrains Mono |
 | Tone of the hero | **Plain language for non-technical visitors**: no version numbers, jargon or distro abbreviations above the fold |
 
 ---
 
 ## 1. Personality
 
-**Calm, friendly, laid back.** Airy light-grey pages, soft dusty-blue panels with simple diagrams, white pills and cards, and warm espresso buttons. Monospace labels add a small technical accent. It should feel trustworthy enough for a newcomer and exact enough for an Arch user.
+**A modern digital publication about Linux, with a friendly discovery tool at its center.** Warm paper-like canvas, confident type, a touch of serif, precise mono labels, and real Linux desktops as the hero of every page. Informed by desktop-OS details (window dots, thin rules, numbered figures), never styled like a developer tool. It should feel trustworthy enough for a newcomer and exact enough for an Arch user.
 
 - **Is:** tactile, quiet, exact, warm, independent
 - **Isn't:** hacker-green-on-black, neon cyberpunk, corporate SaaS, playful cartoon
@@ -36,12 +36,12 @@ The Philip K. Dick reference stays **quiet**: one line in the footer and the 404
 The lowercase **d** and the capital **D** mirror each other: the d's bowl faces left and the D's bowl faces right. The **L** stands between them like a spine. So the monogram is roughly symmetrical, a small typographic object that sits on the desk.
 
 ### Final: concept A, "Mirror"
-"dLD" set in Inter Black with tight spacing (−6%), the d and D optically matched so they read as a pair. Concepts B (pressed L) and C (terminal cursor) were explored and dropped.
+"dLD." set in Geist Bold with tight spacing (−6%), the d and D optically matched so they read as a pair; the period adds an editorial full stop. In the header it sits next to a two-line IBM Plex Mono label: DISTRO L. DESK / THE FRIENDLY LINUX GUIDE. Concepts B (pressed L) and C (terminal cursor) were explored and dropped.
 
 ### Lockups
 - **Monogram:** `dLD` (app icon, social avatar, favicon at 32px and up; a single `d` at 16px)
 - **Horizontal:** `dLD` + `Distro L. Desk` (header)
-- **Wordmark only:** `Distro L. Desk` in Inter Semibold (footer, running text)
+- **Wordmark only:** `Distro L. Desk` in Geist SemiBold (footer, running text)
 
 ### Rules
 - Minimum size: monogram 16px tall (favicon build), horizontal lockup 24px tall.
@@ -55,64 +55,60 @@ The lowercase **d** and the capital **D** mirror each other: the d's bowl faces 
 
 ## 3. Color
 
-Taken from the owner's two reference designs (sampled from the images) and adjusted where needed for WCAG AA. Contrast ratios are against the surface they're used on.
+A restrained, editorial palette. Hierarchy comes from typography, composition and the Linux screenshots, not from big gradients.
 
 ### Light theme (default)
 | Token | Value | Use | Contrast |
 |---|---|---|---|
-| `--surface` | `#F4F4F4` | Page background | — |
-| `--card` | `#FFFFFF` | Cards, pills, secondary buttons | — |
-| `--panel-blue` | `#C4D5E9` | Illustration panels | — |
-| `--pill` | `#EEF2F8` | Pale pill fills, pressed states | — |
-| `--ink` | `#1F0B0C` | Headings, primary text, selected pill fill | 17.2:1 on surface |
-| `--ink-muted` | `#625E5F` | Body text (darkened from the reference's `#6F6B6C` so it also passes on blue panels) | 5.8:1 surface · 4.3:1 panel* |
-| `--cta` → `--cta-end` | `#271010` → `#754211` | Primary button: linear gradient, left to right | white text 8.3–18:1 |
-| `--on-cta` | `#FFFFFF` | Text on the primary button | — |
-| `--accent-blue` | `#258EFA` | Icons, dashed lines, cursor, indicator dots (graphics only) | 3.0:1 (non-text minimum) |
-| `--link` | `#1A64B8` | Blue text: links, pill labels | 5.4:1 surface · 5.3:1 pill |
-| `--hero-top` | `#3F74A4` | Hero gradient, top (behind all white hero text) | white text ≥ 4.5:1 |
-| `--hero-mid` | `#A9BBD0` | Hero gradient, middle | — |
-| `--peach` | `#FBE3D7` | Hero gradient, bottom | — |
-| `--control-edge` | `#A7AEB9` | Input borders, dividers | 3:1 boundary |
-
-\* Body text directly on a blue panel should be avoided; panels hold illustrations and pills, while text sits on the grey surface.
-
-**Hero gradient:** `linear-gradient(180deg, #3F74A4 0%, #3F74A4 42%, #A9BBD0 70%, #FBE3D7 100%)`. On mobile, hold the deep blue to 60%. All white text must sit in the deep-blue zone.
+| `--canvas` | `#F3F1EB` | Page background (warm off-white) | — |
+| `--card` | `#FFFFFF` | Cards, windows, pills | — |
+| `--ink` | `#262924` | Headlines and body text | 13.1:1 |
+| `--ink-muted` | `#5F625C` | Secondary text | 5.5:1 |
+| `--blue` | `#456FA5` | Identity color: primary buttons, links, serif accent words, checks, selected states | 4.6:1 as text · white on blue 5.2:1 |
+| `--blue-deep` | `#3A5F8F` | Blue text on mist panels | 5.1:1 on mist |
+| `--mist` | `#D6E4F1` | Illustration panels, screenshot placeholders, glow | — |
+| `--peach` | `#F0B99F` | **Glow only** (diffuse, behind screenshots). Never text | 1.5:1 |
+| `--pill` | `#ECEAE3` | Tabs track, alternative pills | — |
+| `--rule` | `#A9A99F` | Thin rules (at 45–60% opacity), unselected borders | — |
+| Window dots | `#E6A08B` · `#E7C98A` · `#A9C39A` | The three dots on screenshot windows | decorative |
 
 ### Dark theme
 | Token | Value |
 |---|---|
-| `--surface` | `#131516` |
-| `--card` | `#1C1F22` |
-| `--panel-blue` | `#1C2836` |
-| `--pill` | `#232A33` |
-| `--ink` | `#F2EFEC` (16:1) |
-| `--ink-muted` | `#A8A4A5` (7.4:1) |
-| `--cta` → `--cta-end` | `#F2EFEC` → `#F3C9B5` (light button, espresso text `#271010`) |
-| `--accent-blue` / `--link` | `#6AAEF7` (7.9:1) |
-| Hero gradient | `#1B3552` → `#22303F` → `#3A2A25` |
+| `--canvas` | `#171816` |
+| `--card` | `#20221F` |
+| `--ink` / `--ink-muted` | `#EEEBE3` (15:1) / `#A9ABA4` (7.7:1) |
+| `--blue` | `#8FB3E0` (8.2:1); primary button text becomes `#171816` |
+| `--mist` | `#1F2A36` |
+| `--peach` | `#F0B99F` (glow only) |
 
 ### Usage rules
-- **One primary (espresso) button per view.** On the hero gradient, the main button is **white** with ink text (as in the reference).
-- **Selected states:** a selected pill turns **ink** (espresso-black) with white text. Indicator dots use `--accent-blue`.
-- **Links:** `--link`, underlined in body text.
-- **Blue panels** carry illustrations (rings, dashed paths, pills, screenshot cards). They don't carry running text.
-- **Yellow `#FCC624` is retired.**
+- **Blue is the only strong color.** One primary (blue) button per view; the rest are white or text links.
+- **Peach is atmosphere**, a soft blurred glow behind a screenshot, never a background for text.
+- **Selected states:** blue 1.5px border + blue check circle. Not color alone.
+- The previous palettes (yellow, then blue-to-peach hero gradient with espresso buttons) are retired.
 
 ## 4. Typography
 
-| Role | Typeface | Weights | Use |
+| Role | Typeface | Use |
+|---|---|---|
+| UI and text | **Geist** (Regular, Medium, SemiBold, Bold; OFL) | Everything by default: nav, body, buttons, cards, headings |
+| Editorial accent | **Instrument Serif** (Regular, Italic; OFL) | Only (1) one or two italic words inside a big headline, e.g. "a *fresh start*", "matters *most*", colored `--blue`; (2) large figures in the facts ("Free.", "2031"); (3) the distro name in the recommendation. **Never** in navigation, buttons, cards, form controls or body text |
+| Technical labels | **IBM Plex Mono** (Regular, Medium; OFL) | Chapter labels (`01 / DISCOVER`), eyebrows, figure captions (`FIG. 01 / THE DESKTOP`), window titles, versions, counts |
+
+**Scale (desktop / mobile)**
+| Style | Font | Size / line height | Tracking |
 |---|---|---|---|
-| Display and UI | **Inter** (OFL) | 400, 500, 600, 700 | Headings, body, buttons |
-| Data and labels | **JetBrains Mono** (OFL) | 400, 600, 700 | Version numbers, dates, key numbers, eyebrows, commands, table figures, monograms on keys |
-
-- Self-host both as woff2 subsets (Latin + Latin Extended).
-- Eyebrows (small labels above headings): JetBrains Mono Medium (the family has no SemiBold), 12–13px, uppercase, +0.06em tracking, `--ink-muted`.
-- Key numbers (e.g. "7.0", "2031"): JetBrains Mono 700, 40–56px, with tabular figures.
-- Commands (`apt`, `dnf`, `sudo-rs`): JetBrains Mono in an inset "chip".
-- Everything else follows the type scale in `design.md` §3.5.
-
----
+| Display (hero) | Geist SemiBold + Instrument Serif Italic accent | 88/88 (serif word 100) · mobile 46/48 (serif 52) | −4% (serif −1%) |
+| H1 section | Geist SemiBold (+ serif accent) | 56/60 · mobile 38/42 | −3% |
+| H2 | Geist SemiBold | 36/42 | −2% |
+| H3 | Geist SemiBold | 22/28 | −1% |
+| Body large | Geist Regular | 19/30 | 0 |
+| Body | Geist Regular | 16/25 | 0 |
+| Label / button | Geist Medium | 15/20 | 0 |
+| Figure | Instrument Serif Regular | 84 (lead fact), 64 (others) | −2% |
+| Mono label | IBM Plex Mono Medium | 12/16, uppercase | +8% |
+| Mono small | IBM Plex Mono Regular | 13/18 | 0 |
 
 ## 5. Iconography
 

@@ -282,101 +282,264 @@
     }
   ],
   "finder": {
-    "questions": {
-      "tinker": [
-        "none",
-        "little",
-        "enjoy"
-      ],
-      "use": [
-        "everyday",
-        "coding",
-        "gaming",
-        "servers"
-      ],
-      "style": [
-        "mouse",
-        "keyboard"
-      ]
-    },
-    "rules": [
+    "_about": "Multi-select 'Find your fit'. Each selected preference adds that candidate's score; the highest total wins. Ties go to the earlier candidate in 'order' (most beginner-friendly first). With nothing selected, show the empty state. Texts are in content/copy.md section 3.",
+    "preferences": [
       {
-        "when": {
-          "use": "servers"
-        },
-        "result": "debian",
-        "alt": "Ubuntu Server"
+        "id": "windows",
+        "label": "A familiar, Windows-like experience",
+        "icon": "screen-with-taskbar"
       },
       {
-        "when": {
-          "use": "gaming",
-          "tinker": "enjoy"
-        },
-        "result": "cachyos",
-        "alt": "bazzite"
+        "id": "mac",
+        "label": "A clean, Mac-like interface",
+        "icon": "screen-with-dock"
       },
       {
-        "when": {
-          "use": "gaming"
-        },
-        "result": "bazzite",
-        "alt": "SteamOS (AMD graphics only)"
+        "id": "older",
+        "label": "Getting more from an older PC",
+        "icon": "laptop"
       },
       {
-        "when": {
-          "use": "coding",
-          "style": "keyboard"
-        },
-        "result": "omarchy",
-        "alt": "popos"
+        "id": "easy",
+        "label": "Something that just works, with little upkeep",
+        "icon": "check-circle"
       },
       {
-        "when": {
-          "use": "coding",
-          "tinker": "enjoy"
-        },
-        "result": "nixos",
-        "alt": "Fedora Atomic"
+        "id": "gaming",
+        "label": "Gaming",
+        "icon": "gamepad"
       },
       {
-        "when": {
-          "use": "coding"
-        },
-        "result": "fedora",
-        "alt": "ubuntu"
-      },
-      {
-        "when": {
-          "use": "everyday",
-          "tinker": "enjoy"
-        },
-        "result": "arch",
-        "alt": "openSUSE Tumbleweed"
-      },
-      {
-        "when": {
-          "use": "everyday",
-          "style": "keyboard"
-        },
-        "result": "popos",
-        "alt": "Fedora KDE"
-      },
-      {
-        "when": {
-          "use": "everyday",
-          "tinker": "none"
-        },
-        "result": "mint",
-        "alt": "zorin"
-      },
-      {
-        "when": {
-          "use": "everyday"
-        },
-        "result": "ubuntu",
-        "alt": "elementary"
+        "id": "coding",
+        "label": "Coding and development",
+        "icon": "code"
       }
     ],
-    "_note": "Rules are checked top to bottom; the first match wins. Result texts are in content/copy.md section 9."
+    "order": [
+      "ubuntu",
+      "mint",
+      "zorin",
+      "elementary",
+      "popos",
+      "fedora",
+      "bazzite",
+      "mint-xfce",
+      "xubuntu",
+      "omarchy"
+    ],
+    "scores": {
+      "ubuntu": {
+        "windows": 1,
+        "mac": 1,
+        "older": 0,
+        "easy": 3,
+        "gaming": 1,
+        "coding": 2
+      },
+      "mint": {
+        "windows": 3,
+        "mac": 0,
+        "older": 1,
+        "easy": 3,
+        "gaming": 1,
+        "coding": 1
+      },
+      "zorin": {
+        "windows": 3,
+        "mac": 1,
+        "older": 1,
+        "easy": 2,
+        "gaming": 1,
+        "coding": 0
+      },
+      "elementary": {
+        "windows": 0,
+        "mac": 3,
+        "older": 1,
+        "easy": 2,
+        "gaming": 0,
+        "coding": 0
+      },
+      "popos": {
+        "windows": 1,
+        "mac": 1,
+        "older": 0,
+        "easy": 2,
+        "gaming": 2,
+        "coding": 2
+      },
+      "fedora": {
+        "windows": 0,
+        "mac": 1,
+        "older": 0,
+        "easy": 2,
+        "gaming": 1,
+        "coding": 3
+      },
+      "bazzite": {
+        "windows": 1,
+        "mac": 0,
+        "older": 0,
+        "easy": 2,
+        "gaming": 3,
+        "coding": 0
+      },
+      "mint-xfce": {
+        "windows": 3,
+        "mac": 0,
+        "older": 3,
+        "easy": 2,
+        "gaming": 0,
+        "coding": 1
+      },
+      "xubuntu": {
+        "windows": 1,
+        "mac": 0,
+        "older": 3,
+        "easy": 2,
+        "gaming": 0,
+        "coding": 1
+      },
+      "omarchy": {
+        "windows": 0,
+        "mac": 0,
+        "older": 0,
+        "easy": 0,
+        "gaming": 1,
+        "coding": 3
+      }
+    },
+    "candidates": {
+      "ubuntu": {
+        "name": "Ubuntu",
+        "edition": "26.04 LTS",
+        "distro": "ubuntu",
+        "screenshot": "distro-ubuntu-26.04",
+        "url": "https://ubuntu.com/download",
+        "alternatives": [
+          "mint",
+          "fedora",
+          "elementary"
+        ]
+      },
+      "mint": {
+        "name": "Linux Mint",
+        "edition": "Cinnamon edition",
+        "distro": "mint",
+        "screenshot": "distro-linux-mint",
+        "url": "https://linuxmint.com",
+        "alternatives": [
+          "zorin",
+          "ubuntu",
+          "mint-xfce"
+        ]
+      },
+      "mint-xfce": {
+        "name": "Linux Mint",
+        "edition": "Xfce edition",
+        "distro": "mint",
+        "screenshot": "distro-linux-mint",
+        "url": "https://linuxmint.com",
+        "alternatives": [
+          "zorin",
+          "xubuntu",
+          "ubuntu"
+        ]
+      },
+      "zorin": {
+        "name": "Zorin OS",
+        "edition": "18",
+        "distro": "zorin",
+        "screenshot": null,
+        "url": "https://zorin.com/os",
+        "alternatives": [
+          "mint",
+          "ubuntu",
+          "elementary"
+        ]
+      },
+      "elementary": {
+        "name": "elementary OS",
+        "edition": "8.1",
+        "distro": "elementary",
+        "screenshot": null,
+        "url": "https://elementary.io",
+        "alternatives": [
+          "ubuntu",
+          "zorin",
+          "fedora"
+        ]
+      },
+      "xubuntu": {
+        "name": "Xubuntu",
+        "edition": "",
+        "distro": null,
+        "screenshot": null,
+        "url": "https://xubuntu.org",
+        "alternatives": [
+          "mint-xfce",
+          "ubuntu",
+          "debian"
+        ]
+      },
+      "fedora": {
+        "name": "Fedora",
+        "edition": "44",
+        "distro": "fedora",
+        "screenshot": "distro-fedora-44",
+        "url": "https://fedoraproject.org",
+        "alternatives": [
+          "ubuntu",
+          "popos",
+          "omarchy"
+        ]
+      },
+      "popos": {
+        "name": "Pop!_OS",
+        "edition": "24.04 with COSMIC",
+        "distro": "popos",
+        "screenshot": "distro-popos-24.04",
+        "url": "https://system76.com/pop",
+        "alternatives": [
+          "fedora",
+          "ubuntu",
+          "bazzite"
+        ]
+      },
+      "bazzite": {
+        "name": "Bazzite",
+        "edition": "",
+        "distro": "bazzite",
+        "screenshot": null,
+        "url": "https://bazzite.gg",
+        "alternatives": [
+          "popos",
+          "cachyos",
+          "fedora"
+        ]
+      },
+      "omarchy": {
+        "name": "Omarchy",
+        "edition": "4",
+        "distro": "omarchy",
+        "screenshot": "distro-omarchy-4",
+        "url": "https://omarchy.org",
+        "alternatives": [
+          "fedora",
+          "popos",
+          "arch"
+        ]
+      }
+    },
+    "examples": {
+      "windows + older": "mint-xfce",
+      "windows": "mint",
+      "mac": "elementary",
+      "easy": "ubuntu",
+      "gaming": "bazzite",
+      "coding": "fedora",
+      "coding + gaming": "popos (tie with fedora, popos is earlier in order)",
+      "older": "mint-xfce (tie with xubuntu)"
+    }
   }
 }

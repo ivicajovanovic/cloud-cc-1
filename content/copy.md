@@ -27,7 +27,7 @@ This is the **approved, ready-to-publish text** for every part of the site. The 
 ## 0. Site-wide text
 
 **Site name:** Distro L. Desk
-**Tagline:** A friendly, independent guide to Linux.
+**Tagline:** The friendly Linux guide.
 
 **`<title>` (home):** Distro L. Desk: a friendly, independent guide to Linux in 2026
 **Meta description:** New to Linux? A friendly, independent guide to choosing a version, checking your apps and games, and switching safely from Windows or macOS. Updated September 2026.
@@ -51,71 +51,120 @@ This is the **approved, ready-to-publish text** for every part of the site. The 
 
 ## 1. Header and section index
 
-**Wordmark:** Distro L. Desk
+**Wordmark:** `dLD.` + two-line mono label: DISTRO L. DESK / THE FRIENDLY LINUX GUIDE
 
 **Main navigation**
-| Label | Anchor |
+| Label | Goes to |
 |---|---|
-| What is Linux? | `#what-is-linux` |
-| Help me choose | `#finder` |
-| Versions | `#distros` |
-| Apps | `#apps` |
-| Gaming | `#gaming` |
-| How to switch | `#switch` |
-| FAQ | `#faq` |
+| Explore | `#explore` (chapter 04) |
+| Compare | `#compare` |
+| Switch | `#switch` (chapter 05) |
+
+**Header button (primary):** Find your Linux → `#find-your-fit`
+**Mobile header:** logo + Menu button only. The menu lists the five chapters, then Compare, FAQ and Glossary.
 
 **Mobile menu button:** Menu / Close menu
 **Section index heading (screen readers only):** On this page
 
-**Section index short labels (in page order):** Start · Basics · Why now · Choose · Versions · Apps · Gaming · Your PC · Switch · New in 2026 · Timeline · More versions · Compare · Desktops · Updates · Glossary · FAQ · Help
+**Chapters (mono labels, used in the section index and above each chapter's first section):**
+| Chapter | Label | Sections |
+|---|---|---|
+| 01 | 01 / DISCOVER | Hero |
+| 02 | 02 / FIND YOUR FIT | Find your fit |
+| 03 | 03 / WHY LINUX | What is Linux?, Why now |
+| 04 | 04 / EXPLORE | Six places to start, Apps, Gaming, Your computer, What's new, Timeline, More versions, Compare, Desktops, Updates |
+| 05 | 05 / SWITCH | How to switch, FAQ, Glossary, Help |
+
+**Section index short labels (in page order):** Start · Find your fit · Basics · Why now · Versions · Apps · Gaming · Your PC · New in 2026 · Timeline · More · Compare · Desktops · Updates · Switch · FAQ · Glossary · Help
 
 ---
 
 ## 2. Hero (`#top`)
 
-The hero speaks to people who have never used Linux: no version numbers, jargon or distro abbreviations. Every section below follows the same pattern: a plain-language opening first, then "Show the details" for anyone who wants the technical side.
+Chapter **01 / DISCOVER**. Asymmetric editorial composition (see `design.md` §17). No jargon, no version numbers except in the screenshot caption.
 
-**Eyebrow:** A friendly guide to Linux · Updated September 2026
+**Chapter label (mono):** 01 / A fresh start for your computer
+**Headline (h1):** Give your computer a *fresh start.*
+- "fresh start." is set in Instrument Serif Italic, in blue. On screen readers it's read as one plain sentence.
 
-**Headline (h1):** Give your computer a fresh start with Linux.
+**Subhead (keep to 2–3 lines):** Meet Linux: a free, modern alternative to Windows and macOS. We'll help you pick a version and switch at your own pace.
 
-**Subhead:**
-Linux is a free alternative to Windows and macOS. It runs on most computers, including many that can't upgrade to Windows 11, and it gets regular security updates. This guide helps you choose a version, try it without risk and switch one step at a time.
+**Primary button:** Find your Linux → `#find-your-fit`
+**Secondary (text link on desktop, white button on mobile):** Explore the guide → `#what-is-linux`
 
-**Primary button:** Help me choose → `#finder`
-**Secondary button:** How to switch → `#switch`
+**Desktop visual**
+- **Figure label (mono):** FIG. 01 / THE DESKTOP
+- **Tabs:** Ubuntu · Linux Mint · Fedora (switch the screenshot; `role="tablist"`)
+- **Window titles (mono):** ubuntu-26.04 — desktop · linux-mint — desktop · fedora-44 — desktop
+- **Overlapping small window:** Files (Documents, Pictures, Music, Downloads)
+- **Captions:**
+  - Ubuntu 26.04 with the GNOME desktop.
+  - Linux Mint with the Cinnamon desktop.
+  - Fedora 44 with the GNOME desktop.
+- **Alt text pattern:** "Screenshot of the [Distro] desktop with the Files app open."
+- Screenshots: owner-provided (`distro-ubuntu-26.04`, `distro-linux-mint`, `distro-fedora-44`).
 
-**Choice panel**
-- **Heading:** What matters to you?
-- **Choice pills** (icon + label; the selected pill turns ink with white text and updates the suggestion line):
+**Facts (three editorial columns under thin rules; the first is larger)**
+| Label (mono) | Figure (serif) | Text | Link |
+|---|---|---|---|
+| 01 / The cost | Free. | A complete operating system with no license fee and no subscription. | Why it's free → `#what-is-linux` |
+| 02 / Long-term support | 2031 | Ubuntu 26.04 LTS gets standard security updates until April 2031. | — |
+| 03 / Gaming | 30k+ | Steam games rated Verified or Playable on Steam Deck. Results on other PCs vary by game and hardware. | — |
 
-| Key label | Icon (Lucide-style) | Suggestion shown |
-|---|---|---|
-| Feels like Windows | Screen with a taskbar | Linux Mint |
-| Feels like a Mac | Screen with a top bar and dock | elementary OS |
-| Just works | Check mark in a circle | Ubuntu |
-| Older computer | Laptop | Linux Mint Xfce |
-| Gaming | Game controller | Bazzite |
-| Coding | Code brackets | Fedora |
-
-- **Suggestion line:** Suggestion: [Distro] · See why (links to that distro's profile)
-- **Default state (nothing pressed):** Press a key to see a suggestion.
-- **Panel accessible name:** What matters to you? Choose one to see a suggested Linux version.
-
-**Key numbers strip** (heading, screen readers only: "Linux in four facts")
-| Figure | Label | Source |
-|---|---|---|
-| Free | Every Linux version in this guide costs nothing to download and use | Official project sites |
-| 2031 | Ubuntu 26.04 gets free security updates until 2031 | Ubuntu release notes |
-| 30,000+ | Steam games rated Verified or Playable on the Linux-based Steam Deck | SteamDB via GamingOnLinux and PC Gamer |
-| Oct 2025 | Windows 10 support ended. Linux gives those PCs a supported option | Microsoft, via TechRepublic |
+- Mobile: the first fact is full width; facts 2 and 3 sit side by side with shorter text: "Ubuntu 26.04 LTS security updates until April 2031." · "Steam Deck Verified or Playable games. Other PCs vary."
+- The Windows 10 end-of-support fact moves to "Why now" (section 5), so the hero is about discovering Linux, not only about Windows 10.
 
 ---
 
-## 3. What is Linux? (`#what-is-linux`)
+## 3. Find your fit (`#find-your-fit`)
+
+Chapter **02 / FIND YOUR FIT**. The central feature of the site. Logic and scores: `data/distros.json` → `finder`.
 
 **Plain-language opening (always visible)**
-- **Eyebrow:** The basics
+- **Chapter label:** 02 / Find your fit
+- **Heading (h2):** What matters *most* to you? ("most" in Instrument Serif Italic, blue)
+- **In short:** Pick one or more. We'll suggest a version of Linux that fits, and tell you the trade-offs.
+
+**Preferences (multi-select; numbered on desktop, 2-column tiles with icons on mobile)**
+| # | Label |
+|---|---|
+| 01 | A familiar, Windows-like experience |
+| 02 | A clean, Mac-like interface |
+| 03 | Getting more from an older PC |
+| 04 | Something that just works, with little upkeep |
+| 05 | Gaming |
+| 06 | Coding and development |
+
+**Status line:** "[n] preference selected" / "[n] preferences selected" · Clear
+**Empty state (nothing selected), in the recommendation card:** Pick at least one thing that matters to you, and your match appears here.
+
+**Recommendation card**
+- **Label:** Your match · plus the selected preferences in short form (Windows-like · Mac-like · Older PC · Just works · Gaming · Coding)
+- **Name + edition**, three reasons, one trade-off, then buttons **Get [Name]** (official site) and **Read the profile** (when a profile exists), and **Also consider** (three pills).
+- Only candidates with an owner-provided screenshot show the screenshot window; the others show the card without it.
+
+| Candidate | Name / edition | Reasons (3) | Trade-off |
+|---|---|---|---|
+| ubuntu | Ubuntu · 26.04 LTS | The most widely used Linux for everyday computers, with answers online for almost anything. · Free security updates until April 2031. · Install apps from a built-in store, like on a phone. | It needs 6 GB of RAM or more, and it uses Snap apps, which some people prefer to avoid. |
+| mint | Linux Mint · Cinnamon edition | The menu, taskbar and settings work the way Windows does. · Years of updates, with careful, conservative changes. · A friendly forum with an area just for newcomers. | New desktop features arrive later than on Ubuntu or Fedora. |
+| mint-xfce | Linux Mint · Xfce edition | The menu, taskbar and settings work the way Windows does. · The Xfce edition stays quick on older computers. · Years of updates, with careful, conservative changes. | New desktop features arrive later than on Ubuntu or Fedora. |
+| zorin | Zorin OS · 18 | Several layouts that look like Windows. · Connects to OneDrive and runs many Windows programs through a compatibility layer. · Made for people leaving Windows. | It's built on Ubuntu, so new features arrive a little later. |
+| elementary | elementary OS · 8.1 | A calm, carefully designed desktop that feels familiar to Mac users. · Runs on regular PCs and, for the first time, on ARM computers. · Can be installed and set up entirely with a screen reader. | It's deliberately less customizable than most Linux desktops. |
+| xubuntu | Xubuntu | Ubuntu with a lightweight desktop that runs on 2 GB of RAM or more. · The same software and updates as Ubuntu. · A simple, classic layout. | It looks plainer than modern desktops. |
+| fedora | Fedora · 44 | The newest stable tools for coding, tested before release. · New GNOME and KDE versions soon after they come out. · Sponsored by Red Hat. | You'll upgrade to a new version about once a year. |
+| popos | Pop!_OS · 24.04 with COSMIC | Windows arrange themselves neatly side by side, with the mouse or the keyboard. · A separate download includes NVIDIA drivers. · Made by System76, a company that sells Linux computers. | The COSMIC desktop is new and still getting regular fixes. |
+| bazzite | Bazzite | Steam, game launchers and graphics drivers come preinstalled. · A console-style mode for TVs and handhelds. · A bad update can be undone when you start the computer. | Some online games with anti-cheat still don't run on Linux. |
+| omarchy | Omarchy · 4 | A polished, keyboard-driven setup for developers, ready from the first boot. · Pick a default AI coding assistant during setup. · Themes restyle your editor and terminal to match. | It's not meant for beginners: it expects you to be comfortable with the terminal. |
+
+**Accessibility:** preferences are checkboxes in a `fieldset` with the legend "What matters most to you?"; the card is an `aria-live="polite"` region announcing "Your match: [Name]".
+**No-JS fallback:** a table "Which version for whom" listing each preference with its top match.
+
+---
+
+## 4. What is Linux? (`#what-is-linux`)
+
+**Plain-language opening (always visible)**
+- **Eyebrow:** 03 / Why Linux
 - **Heading (h2):** What is Linux, in plain words?
 - **In short:** Linux is the software that runs a computer, like Windows or macOS. It's free, anyone can use it, and it already runs Android phones and the Steam Deck. You don't install "Linux" on its own. You pick a ready-made version of it, called a **distro**, which comes with a desktop, apps and settings, a bit like choosing a new phone.
 
@@ -145,11 +194,12 @@ Linux is a free alternative to Windows and macOS. It runs on most computers, inc
 
 ---
 
-## 4. Why now (`#why-now`)
+## 5. Why now (`#why-now`)
 
 **Plain-language opening (always visible)**
 - **Eyebrow:** Why now
 - **Heading (h2):** Why so many people are trying Linux right now
+- **Chapter label (on the first section of chapter 03):** 03 / Why Linux
 - **In short:** Windows 10 stopped getting security updates in October 2025, and many computers can't upgrade to Windows 11. Linux gives those computers free updates for years. Games, apps and setup have also become much easier, so switching is less of a leap than it used to be.
 
 **The details** (collapsed by default)
@@ -166,72 +216,10 @@ You may see claims that Linux now runs on 5%, 9% or even 10% of desktops. These 
 
 ---
 
-## 5. Distro finder (`#finder`)
-
-**Plain-language opening (always visible)**
-- **Eyebrow:** Three questions
-- **Heading (h2):** Not sure which one? Answer three questions.
-- **In short:** There's no single "best" Linux. The right one depends on what you do and how you like to work. Flip three switches and we'll suggest a good place to start. Nothing you choose is stored or sent anywhere.
-
-**The details** (none: the finder is the content)
-
-**Question 1:** How hands-on do you want to be?
-- Not at all: I want it to work out of the box
-- A little: I'll change a few settings
-- I enjoy it: I like to build my own setup
-
-**Question 2:** What will you mostly use it for?
-- Everyday use: web, email, documents, video
-- Coding
-- Gaming
-- Running servers
-
-**Question 3:** How do you like to work?
-- With the mouse and overlapping windows
-- With the keyboard and tiled windows
-
-**Switch labels (short, shown on the switches) with helper text (shown under the switch for the selected option):**
-| Question | Switch label | Helper text |
-|---|---|---|
-| 1 | Not at all | I want it to work out of the box |
-| 1 | A little | I'll change a few settings |
-| 1 | I enjoy it | I like to build my own setup |
-| 2 | Everyday | Web, email, documents, video |
-| 2 | Coding | Writing and running code |
-| 2 | Gaming | Steam and other game launchers |
-| 2 | Servers | Running services and websites |
-| 3 | Mouse | With the mouse and overlapping windows |
-| 3 | Keyboard | With the keyboard and tiled windows |
-
-**Result eyebrow:** Your suggestion
-
-**Before answering (result area):** Flip the three switches to see a suggestion.
-**Result heading pattern:** Try [Distro]
-**Result buttons:** Official site · Read the profile
-**"Also try" label:** Also worth a look:
-**Reset button:** Start again
-**No-JS fallback heading:** Quick guide: which distro for whom
-
-**Result texts**
-| Result | Why (one or two sentences) |
-|---|---|
-| **Linux Mint** | It works the way Windows does, it avoids surprises, and it gets updates for years. The easiest first step. *Also try: Zorin OS* |
-| **Ubuntu 26.04 LTS** | The most popular Linux for everyday computers, with free updates until 2031 and an answer online for almost every question. *Also try: elementary OS* |
-| **Omarchy 4** | A ready-made coding setup you control with the keyboard, with developer tools and AI coding assistants ready from day one. *Also try: Pop!_OS* |
-| **Fedora 44** | Up-to-date tools for coding, tested carefully before release, with a new version twice a year. *Also try: Ubuntu 26.04 LTS* |
-| **Bazzite** | Steam, drivers and game launchers come ready to go, and a bad update can be undone when you start the computer. *Also try: SteamOS (AMD graphics only)* |
-| **CachyOS** | Built for speed, for players who like to fine-tune their setup. *Also try: Bazzite* |
-| **Debian 13** | Rock-solid, changes slowly and gets updates until 2030. Great for servers. *Also try: Ubuntu Server* |
-| **Pop!_OS with COSMIC** | Windows arrange themselves neatly side by side, and you can still do everything with the mouse. *Also try: Fedora KDE* |
-| **Arch Linux** | You build your system piece by piece and learn how Linux works along the way. Keep the Arch Wiki open. *Also try: openSUSE Tumbleweed* |
-| **NixOS 26.05** | Your whole setup lives in one file, so you can rebuild it on any computer or undo any change. *Also try: Fedora Atomic* |
-
----
-
 ## 6. Featured distros (`#distros`)
 
 **Plain-language opening (always visible)**
-- **Eyebrow:** Where to start
+- **Eyebrow:** 04 / Explore
 - **Heading (h2):** Six good places to start
 - **In short:** A distro is a ready-to-use version of Linux. These six cover almost everyone. If you're new, start with **Linux Mint** or **Ubuntu**: they're friendly, well supported, and have huge communities that happily answer beginner questions.
 
@@ -374,7 +362,7 @@ You may see claims that Linux now runs on 5%, 9% or even 10% of desktops. These 
 
 **The details** (collapsed by default; the "Before you switch" callout stays visible)
 
-Steam includes Proton, a compatibility layer that runs Windows games on Linux with no setup. As of August 2026, 30,006 games were rated Verified or Playable on the Steam Deck, which runs the same technology. Valve now sells the Steam Machine, a living-room PC running SteamOS, and supports SteamOS on any desktop PC with an AMD graphics card.
+Steam includes Proton, a compatibility layer that runs Windows games on Linux with no setup. As of August 2026, 30,006 games were rated Verified or Playable on the Steam Deck, which runs the same technology. Results on other Linux PCs vary by game and hardware. Valve now sells the Steam Machine, a living-room PC running SteamOS, and supports SteamOS on any desktop PC with an AMD graphics card.
 
 **Subheading (h3):** What works well
 Most single-player games on Steam. Epic and GOG games through the Heroic launcher. Emulators. Controllers, including Xbox, PlayStation and Steam controllers.
@@ -424,49 +412,7 @@ Some popular online multiplayer games, including Battlefield 6, Call of Duty and
 
 ---
 
-## 10. Switching guide (`#switch`)
-
-**Plain-language opening (always visible)**
-- **Eyebrow:** Step by step
-- **Heading (h2):** How to switch, step by step
-- **In short:** Plan for an afternoon. Back up your files, put Linux on a USB stick and try it out. Only install it when you're happy, and you can keep Windows alongside it if you like.
-
-**The details** (the eight steps are always visible; the virtual machine callout is collapsed)
-
-**Progress label (aria pattern):** "Step [n] of 8"
-
-1. **Back up everything.**
-   Copy your documents, photos and other files to an external drive or cloud storage. Export your browser bookmarks and make sure you can sign in to your password manager.
-
-2. **Check your apps and games.**
-   Go through the apps table above and look up your games on ProtonDB. Note anything that has no Linux version.
-
-3. **Choose a distro.**
-   Use the distro finder. If you're unsure, pick Linux Mint or Ubuntu 26.04 LTS. Both are safe first choices.
-
-4. **Download it from the official site.**
-   Only download from the distro's own website. On the download page you'll find a checksum, a long code you can use to confirm the file wasn't damaged or tampered with.
-
-5. **Put Linux on a USB stick.**
-   Use a USB stick of 8 GB or more. Write the downloaded file to it with Fedora Media Writer, balenaEtcher or Ventoy. This erases the USB stick, not your computer.
-
-6. **Try it without installing.**
-   Restart your computer and start it from the USB stick. You usually open the boot menu with a key like F12, F2 or Esc at startup. Most distros open a "live" session, so you can check Wi-Fi, sound, the display, the touchpad and sleep. Nothing on your computer changes.
-
-7. **Install.**
-   Choose "Erase disk" for a clean start, or "Install alongside" to keep your current system and pick one at startup (dual boot). Turn on disk encryption if the installer offers it.
-
-8. **Your first week.**
-   Install all updates. Accept any driver the system suggests. Turn on Flathub (the biggest Linux app store) if your distro doesn't include it. Install your apps. Set up automatic backups with the built-in backup tool, Déjà Dup or Timeshift.
-
-**Callout title:** Prefer to try it in a window first?
-**Callout body:** Install a free virtual machine app such as GNOME Boxes, VirtualBox or VMware Workstation, and run any distro inside your current system. It's slower than a real install, but completely risk-free.
-
----
-
-## 11. What's new in 2026 (`#whats-new`)
-
-**Deep-dive divider (above this section, flat, centered):** That's everything you need to get started. Want to go deeper? The rest of the page is for the curious.
+## 10. What's new in 2026 (`#whats-new`)
 
 **Plain-language opening (always visible)**
 - **Eyebrow:** New this year
@@ -521,7 +467,7 @@ Omarchy 4 asks you to choose a default AI coding agent, such as Claude Code, Cod
 
 ---
 
-## 12. Release calendar (`#calendar`)
+## 11. Release calendar (`#calendar`)
 
 **Plain-language opening (always visible)**
 - **Eyebrow:** Timeline
@@ -555,7 +501,7 @@ Omarchy 4 asks you to choose a default AI coding agent, such as Claude Code, Cod
 
 ---
 
-## 13. More distros (`#more-distros`)
+## 12. More distros (`#more-distros`)
 
 **Plain-language opening (always visible)**
 - **Eyebrow:** More versions
@@ -584,7 +530,7 @@ Omarchy 4 asks you to choose a default AI coding agent, such as Claude Code, Cod
 
 ---
 
-## 14. Comparison table (`#compare`)
+## 13. Comparison table (`#compare`)
 
 **Plain-language opening (always visible)**
 - **Eyebrow:** Side by side
@@ -621,7 +567,7 @@ Omarchy 4 asks you to choose a default AI coding agent, such as Claude Code, Cod
 
 ---
 
-## 15. Desktops explained (`#desktops`)
+## 14. Desktops explained (`#desktops`)
 
 **Plain-language opening (always visible)**
 - **Eyebrow:** How it looks
@@ -653,7 +599,7 @@ Omarchy 4 asks you to choose a default AI coding agent, such as Claude Code, Cod
 
 ---
 
-## 16. How distros update (`#release-models`)
+## 15. How distros update (`#release-models`)
 
 **Plain-language opening (always visible)**
 - **Eyebrow:** Updates
@@ -686,46 +632,47 @@ You write down what your system should contain, and the distro builds exactly th
 
 ---
 
-## 17. Glossary (`#glossary`)
+## 16. Switching guide (`#switch`)
 
 **Plain-language opening (always visible)**
-- **Eyebrow:** Reference
-- **Heading (h2):** Linux words, in plain language
-- **In short:** Stuck on a word? Look it up here. Every term is explained in one or two everyday sentences.
+- **Eyebrow:** 05 / Switch
+- **Heading (h2):** How to switch, step by step
+- **In short:** Plan for an afternoon. Back up your files, put Linux on a USB stick and try it out. Only install it when you're happy, and you can keep Windows alongside it if you like.
 
-**The details** (none: the glossary is the content)
+**The details** (the eight steps are always visible; the virtual machine callout is collapsed)
 
-**Search label:** Search the glossary
-**Search placeholder:** Type a word, e.g. Wayland
-**No results text:** No term matches "[query]". Try a shorter word.
-**Result count (aria-live pattern):** "[n] terms shown"
+**Progress label (aria pattern):** "Step [n] of 8"
 
-| Term | Definition |
-|---|---|
-| **Atomic** | A system that updates as one complete image and can go back to the previous version at startup. Also called image-based or immutable. |
-| **AUR** | The Arch User Repository: a large collection of community-made install scripts for Arch-based distros such as Omarchy and CachyOS. |
-| **Desktop environment** | The interface you see and click: panels, menus, windows and settings. GNOME, KDE Plasma and COSMIC are desktop environments. |
-| **Distro** | Short for distribution: a complete operating system built around the Linux kernel, with a desktop, apps and tools. |
-| **Dual boot** | Two operating systems on one computer. You choose which one to start each time you turn it on. |
-| **Flatpak** | A way of packaging apps so the same app runs on almost any distro, isolated in a sandbox. |
-| **Flathub** | The main app store for Flatpak apps. |
-| **ISO** | The installer file you download. You write it to a USB stick to start or install a distro. |
-| **Kernel** | The core of the operating system, which talks to your hardware. Linux itself is a kernel; the current major version is 7.0. |
-| **Live USB** | A USB stick that runs a distro without installing it, so you can try it risk-free. |
-| **LTS** | Long-term support: one version that gets security updates for several years. |
-| **Package manager** | The tool that installs, updates and removes software, such as apt, dnf, pacman or zypper. |
-| **Proton** | Valve's compatibility layer that lets Windows games run on Linux through Steam. |
-| **Rolling release** | A distro with no fixed versions, where new software arrives continuously. |
-| **Snap** | Canonical's app format, used mainly on Ubuntu. |
-| **Terminal** | A window where you type commands. Optional on most beginner-friendly distros. |
-| **Tiling** | A way of arranging windows side by side automatically, so they never overlap. |
-| **TPM** | A security chip in most modern computers. It can hold the key that unlocks an encrypted disk. |
-| **Wayland** | The modern system for drawing windows on screen, which replaces X11. |
-| **X11 and XWayland** | X11 is the older display system. XWayland lets older X11 apps run on a Wayland desktop. |
+1. **Back up everything.**
+   Copy your documents, photos and other files to an external drive or cloud storage. Export your browser bookmarks and make sure you can sign in to your password manager.
+
+2. **Check your apps and games.**
+   Go through the apps table above and look up your games on ProtonDB. Note anything that has no Linux version.
+
+3. **Choose a distro.**
+   Use the distro finder. If you're unsure, pick Linux Mint or Ubuntu 26.04 LTS. Both are safe first choices.
+
+4. **Download it from the official site.**
+   Only download from the distro's own website. On the download page you'll find a checksum, a long code you can use to confirm the file wasn't damaged or tampered with.
+
+5. **Put Linux on a USB stick.**
+   Use a USB stick of 8 GB or more. Write the downloaded file to it with Fedora Media Writer, balenaEtcher or Ventoy. This erases the USB stick, not your computer.
+
+6. **Try it without installing.**
+   Restart your computer and start it from the USB stick. You usually open the boot menu with a key like F12, F2 or Esc at startup. Most distros open a "live" session, so you can check Wi-Fi, sound, the display, the touchpad and sleep. Nothing on your computer changes.
+
+7. **Install.**
+   Choose "Erase disk" for a clean start, or "Install alongside" to keep your current system and pick one at startup (dual boot). Turn on disk encryption if the installer offers it.
+
+8. **Your first week.**
+   Install all updates. Accept any driver the system suggests. Turn on Flathub (the biggest Linux app store) if your distro doesn't include it. Install your apps. Set up automatic backups with the built-in backup tool, Déjà Dup or Timeshift.
+
+**Callout title:** Prefer to try it in a window first?
+**Callout body:** Install a free virtual machine app such as GNOME Boxes, VirtualBox or VMware Workstation, and run any distro inside your current system. It's slower than a real install, but completely risk-free.
 
 ---
 
-## 18. FAQ (`#faq`)
+## 17. FAQ (`#faq`)
 
 **Plain-language opening (always visible)**
 - **Eyebrow:** Questions
@@ -775,6 +722,45 @@ You write down what your system should contain, and the distro builds exactly th
 
 ---
 
+## 18. Glossary (`#glossary`)
+
+**Plain-language opening (always visible)**
+- **Eyebrow:** Reference
+- **Heading (h2):** Linux words, in plain language
+- **In short:** Stuck on a word? Look it up here. Every term is explained in one or two everyday sentences.
+
+**The details** (none: the glossary is the content)
+
+**Search label:** Search the glossary
+**Search placeholder:** Type a word, e.g. Wayland
+**No results text:** No term matches "[query]". Try a shorter word.
+**Result count (aria-live pattern):** "[n] terms shown"
+
+| Term | Definition |
+|---|---|
+| **Atomic** | A system that updates as one complete image and can go back to the previous version at startup. Also called image-based or immutable. |
+| **AUR** | The Arch User Repository: a large collection of community-made install scripts for Arch-based distros such as Omarchy and CachyOS. |
+| **Desktop environment** | The interface you see and click: panels, menus, windows and settings. GNOME, KDE Plasma and COSMIC are desktop environments. |
+| **Distro** | Short for distribution: a complete operating system built around the Linux kernel, with a desktop, apps and tools. |
+| **Dual boot** | Two operating systems on one computer. You choose which one to start each time you turn it on. |
+| **Flatpak** | A way of packaging apps so the same app runs on almost any distro, isolated in a sandbox. |
+| **Flathub** | The main app store for Flatpak apps. |
+| **ISO** | The installer file you download. You write it to a USB stick to start or install a distro. |
+| **Kernel** | The core of the operating system, which talks to your hardware. Linux itself is a kernel; the current major version is 7.0. |
+| **Live USB** | A USB stick that runs a distro without installing it, so you can try it risk-free. |
+| **LTS** | Long-term support: one version that gets security updates for several years. |
+| **Package manager** | The tool that installs, updates and removes software, such as apt, dnf, pacman or zypper. |
+| **Proton** | Valve's compatibility layer that lets Windows games run on Linux through Steam. |
+| **Rolling release** | A distro with no fixed versions, where new software arrives continuously. |
+| **Snap** | Canonical's app format, used mainly on Ubuntu. |
+| **Terminal** | A window where you type commands. Optional on most beginner-friendly distros. |
+| **Tiling** | A way of arranging windows side by side automatically, so they never overlap. |
+| **TPM** | A security chip in most modern computers. It can hold the key that unlocks an encrypted disk. |
+| **Wayland** | The modern system for drawing windows on screen, which replaces X11. |
+| **X11 and XWayland** | X11 is the older display system. XWayland lets older X11 apps run on a Wayland desktop. |
+
+---
+
 ## 19. Get help, sources and footer (`#help`)
 
 **Plain-language opening (always visible)**
@@ -796,7 +782,7 @@ You write down what your system should contain, and the distro builds exactly th
 ### Final call to action
 **Heading (h2):** Try Linux this weekend.
 **Body:** Pick a distro, put it on a USB stick and start it up. You don't have to install anything until you're sure.
-**Button:** Help me choose
+**Button:** Find your Linux
 **Secondary link:** Read the switching guide
 
 ### Sources
@@ -826,7 +812,7 @@ You write down what your system should contain, and the distro builds exactly th
 **Heading (h1):** Do androids dream of missing pages?
 **Body:** This page doesn't exist, or it has moved. The rest of the desk is still here.
 **Button:** Back to the guide
-**Secondary link:** Help me choose
+**Secondary link:** Find your Linux
 
 ---
 

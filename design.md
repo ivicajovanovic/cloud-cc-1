@@ -1,6 +1,6 @@
 # design.md: Soft UI (Neumorphism)
 
-> **Project direction update (September 2026):** Distro L. Desk now uses a **relaxed Soft UI** style. §16 overrides the neumorphic shadow rules below; everything else (accessibility, spacing, motion, component states) still applies.
+> **Project direction (latest, September 2026):** Distro L. Desk uses a **contemporary editorial** direction (§17), which overrides §16 (relaxed Soft UI) and the neumorphic rules. Accessibility, spacing, motion and component-state rules below still apply.
 
 This document defines the visual language for our interfaces: **Soft UI**, better known as *neumorphism*. Designers and engineers should both work from it. It covers the principles, design tokens, component recipes, accessibility rules and the do's and don'ts that come from how the style has been used in real products (and from its well-known failures).
 
@@ -498,3 +498,37 @@ Chosen by the site owner from two reference designs: airy, calm, less "3D".
 - `02 Hero v3`: gradient hero, "What matters to you?" pill row, number cards.
 - `03 What is Linux v3`: split row 1 (the "many versions, one core" ring diagram) and split row 2 (screenshot cards, "Running from USB").
 - Frames marked `(old)` are the previous neumorphic versions, kept for reference.
+
+## 17. Contemporary editorial direction (current; overrides §16)
+
+**Goal:** a modern digital publication about Linux combined with a well-presented OS discovery tool. Distinctive through typography, composition and real Linux imagery, not effects.
+
+### Principles
+1. **Designed compositions, not templates.** Prefer asymmetry: in the hero, copy takes the left ~45–55%, the desktop visual takes the rest and may bleed past the content column or the viewport edge.
+2. **Big, tight display type** with one serif-italic accent phrase in blue (see `brand.md` §4). Keep paragraphs to 2–3 short lines.
+3. **The product is the visual.** Real desktop screenshots (owner-provided) are the largest visual element. Show them as a floating **window** (white frame, 14px radius, title bar with three dots and a mono title) with a smaller overlapping window (e.g. Files) for depth. **No laptop or phone mockups.**
+4. **Restraint with color.** Warm canvas everywhere; blue for identity and interaction; peach only as a localized blurred glow behind screenshots (LAYER_BLUR ~90px, peach at ~55%, mist behind).
+5. **Editorial structure.** Five numbered chapters, mono chapter labels (`01 / DISCOVER`), thin rules (1px `--rule` at 45–60%) above chapters and fact columns, figure captions (`FIG. 01 / THE DESKTOP`).
+6. **Unequal weight for unequal information.** Facts sit in columns under rules; the lead fact is larger. No rows of identical stat cards.
+7. **Linux-informed details, used sparingly:** window dots, mono window titles, a terminal-flavored touch in the switching guide. Nothing that makes the page feel like a developer tool.
+8. **Mobile has its own rhythm:** a bigger headline, full-width primary + secondary buttons, a large screenshot (full content width), option tiles in a 2-column grid, the recommendation directly below the choices, and facts in varied layouts (one full-width lead fact, then two side by side).
+
+### Numbered chapters
+Chapter labels are structural (they match the navigation), not decoration. Don't number individual cards except in the preference list and the switching steps, where order has meaning.
+
+### Components (new or changed)
+| Component | Spec |
+|---|---|
+| Header | `dLD.` (Geist Bold 26, −6%) + two-line mono label "DISTRO L. DESK / THE FRIENDLY LINUX GUIDE"; nav **Explore · Compare · Switch**; one primary button **Find your Linux →**. A thin rule under the header. Mobile: logo + Menu pill only |
+| Primary button | Solid `--blue`, white Geist Medium label, 10px radius, `shadow-1`. Secondary: white, ink text. Tertiary: underlined text link |
+| Desktop window | See principle 3. Title bar 10px dots `#E6A08B/#E7C98A/#A9C39A`, gap 6; title in mono small |
+| Distro tabs | Pill track `--pill`, selected tab white with `shadow-1`. Switches the screenshot (Ubuntu · Linux Mint · Fedora); `role="tablist"` |
+| Fact column | Rule on top, mono label, Instrument Serif figure (84 lead / 64 others), short Geist text, optional link |
+| Preference row (desktop) | White or canvas row, 14px radius, mono number, label, check circle on the right. Selected: white, 1.5px blue border, filled blue check, `shadow-1`. Unselected: canvas fill, 1px rule border, empty circle. Real checkboxes (`role="checkbox"`, `aria-checked`) |
+| Preference tile (mobile) | 2-column grid, icon + check on top, label below, same selected styling |
+| Recommendation card | White, 22px radius, `shadow-3`. Mono "YOUR MATCH" + matched preferences; distro name in Instrument Serif 64 (mobile 48) + edition; screenshot window (desktop); three reasons with blue check icons; "Trade-off:" line; primary "Get [distro]" + "Read the profile"; rule; "ALSO CONSIDER" pills. It updates live (`aria-live="polite"`) |
+
+### Figma
+- `02 Hero v4` and `03 Find your fit` are the reference frames for this direction (desktop 1440 + mobile 390).
+- `04 What is Linux v3` and `06 Distro cards` pick up the new palette and fonts automatically but still use the previous layouts; restyle them with these principles.
+- Frames marked `(old)` are superseded.

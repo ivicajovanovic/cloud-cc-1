@@ -1,11 +1,11 @@
 # Distro L. Desk: landing page
 
-A single long-scroll, static, **beginner-first** guide to Linux in 2026 (19 sections, see the page map in `content/landing.md`), styled as **relaxed Soft UI** (airy split layouts, dusty-blue illustrated panels, white pills/cards, espresso buttons; see `design.md` §16). Most visitors are non-technical: every section opens in plain language, with technical detail in a "Show the details" panel.
+A single long-scroll, static, **beginner-first** guide to Linux in 2026 (19 sections in 5 chapters, see the page map in `content/landing.md`), in a **contemporary editorial** style: warm canvas, Geist + Instrument Serif accents + IBM Plex Mono labels, asymmetric compositions, real Linux desktop screenshots as the main visual, and a multi-select **Find your fit** recommender at its center (see `design.md` §17). Most visitors are non-technical: every section opens in plain language, with technical detail in a "Show the details" panel.
 
 ## Source files (read these before building)
-- `brand.md`: logo (dLD, concept A), the relaxed blue & espresso palette, typefaces, image brief. Overrides `design.md` for color, type and logo.
+- `brand.md`: logo (`dLD.`), the editorial warm & blue palette, typefaces, image brief. Overrides `design.md` for color, type and logo.
 - `design.md`: visual system (tokens, shadows, components, layout, motion, accessibility). Follow it exactly.
-- **Figma file** (https://www.figma.com/design/Zb9Vh2RVRtl3UDGqXeXWdH): the approved visual design. The code implements it. Current designs are `02 Hero v3` and `03 What is Linux v3` (relaxed style); frames marked `(old)` are superseded. Also designed (desktop 1440 + mobile 390, in the previous style, to be restyled): foundations, final logo, core components (keycap, button, readout, theme toggle, **Details toggle**), Hero (plain-language), What is Linux? (the section-opening + details pattern), Finder, and the distro card (closed and open). The remaining sections follow the same components and rules.
+- **Figma file** (https://www.figma.com/design/Zb9Vh2RVRtl3UDGqXeXWdH): the approved visual design. The code implements it. Reference frames for the current direction: `02 Hero v4` and `03 Find your fit` (desktop 1440 + mobile 390). Frames marked `(old)` are superseded. Also present (new palette and fonts, older layouts, to be restyled): foundations, final logo, core components (keycap, button, readout, theme toggle, **Details toggle**), Hero (plain-language), What is Linux? (the section-opening + details pattern), Finder, and the distro card (closed and open). The remaining sections follow the same components and rules.
   - **The site owner redesigns sections in Figma.** The Figma file is the source of truth for visuals. Frames are named `NN Section · Desktop 1440` / `· Mobile 390` using the page-map numbers. Build a section from Figma only when its frame name contains **"✓ Ready"**; otherwise use the existing frames and `design.md`. Never overwrite the owner's frames; add new frames next to them and ask first. The rules for editing are on the `00 Read me · How to redesign` board and in `design.md` §15.
   - If the owner changes wording in Figma, update `content/copy.md` to match before building (copy.md stays the text source for the code).
   - The Figma Starter plan allows one variable mode, so dark colors live in a separate `Color (Dark)` collection (`dark/*`). In code, both themes are CSS custom properties.
@@ -21,9 +21,9 @@ A single long-scroll, static, **beginner-first** guide to Linux in 2026 (19 sect
   index.html
   assets/css/tokens.css     # design.md tokens as CSS custom properties
   assets/css/main.css       # layout + components
-  assets/js/main.js         # theme toggle, keycap press, timeline, distro finder
+  assets/js/main.js         # theme toggle, distro tabs, Find your fit, timeline
   data/distros.json         # distro facts + finder rules
-  assets/fonts/             # self-hosted Inter + JetBrains Mono (woff2)
+  assets/fonts/             # self-hosted Geist, Instrument Serif, IBM Plex Mono (woff2)
   assets/img/               # og-image.png, favicon.svg, screenshots
   ```
 - Run locally: `python3 -m http.server 8000`, then open http://localhost:8000

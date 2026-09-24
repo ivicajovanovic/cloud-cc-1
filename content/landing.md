@@ -16,35 +16,35 @@
 
 ---
 
-## Page map (19 sections, beginner-first order)
+## Page map (19 sections in 5 chapters, editorial direction)
 
-Most visitors are beginners. Practical questions come first; deep dives for curious and technical readers come after the switching guide.
+The narrative: **Discover → Find your fit → Why Linux → Explore → Switch.** One dominant goal: help each visitor find a Linux version that fits.
 
-| # | Section | Anchor | Purpose |
+| # | Chapter | Section | Anchor |
 |---|---|---|---|
-| 1 | Header / sticky index | — | Navigation, theme toggle |
-| 2 | Hero | `#top` | Plain-language hook, "What matters to you?" keys, four facts |
-| 3 | What is Linux? | `#what-is-linux` | **New.** The basics in plain words: free, many versions, try first |
-| 4 | Why now | `#why-now` | Windows 10 end of support, why people are switching |
-| 5 | Help me choose (finder) | `#finder` | Three switches → a suggestion |
-| 6 | Six good places to start | `#distros` | The six main versions, plain summary first |
-| 7 | Will my apps work? | `#apps` | Apps table first, install methods in details |
-| 8 | Can I game on Linux? | `#gaming` | Honest gaming picture |
-| 9 | Will it run on my computer? | `#hardware` | Hardware check |
-| 10 | How to switch | `#switch` | Eight steps |
-| 11 | What's new in 2026 | `#whats-new` | *Deep dive begins.* Six changes, plain line + technical details |
-| 12 | The year in releases | `#calendar` | Timeline slider |
-| 13 | More versions | `#more-distros` | Eight more distros by need |
-| 14 | Compare side by side | `#compare` | Comparison table |
-| 15 | How it looks | `#desktops` | Desktop environments |
-| 16 | How updates work | `#release-models` | LTS, rolling, atomic, declarative |
-| 17 | Glossary | `#glossary` | Plain-language definitions |
-| 18 | FAQ | `#faq` | Beginner questions |
-| 19 | Help, sources, footer | `#help` | Communities, final CTA, sources, legal |
+| 1 | — | Header (`dLD.` · Explore · Compare · Switch · **Find your Linux**) | — |
+| 2 | 01 / Discover | Hero: headline, desktop window with distro tabs, three facts | `#top` |
+| 3 | 02 / Find your fit | Multi-select preferences + live recommendation (the central feature) | `#find-your-fit` |
+| 4 | 03 / Why Linux | What is Linux? | `#what-is-linux` |
+| 5 | 03 / Why Linux | Why now (Windows 10 end of support lives here) | `#why-now` |
+| 6 | 04 / Explore | Six good places to start | `#explore` / `#distros` |
+| 7 | 04 / Explore | Will my apps work? | `#apps` |
+| 8 | 04 / Explore | Can I game on Linux? | `#gaming` |
+| 9 | 04 / Explore | Will it run on my computer? | `#hardware` |
+| 10 | 04 / Explore | What's new in 2026 | `#whats-new` |
+| 11 | 04 / Explore | The year in releases | `#calendar` |
+| 12 | 04 / Explore | More versions | `#more-distros` |
+| 13 | 04 / Explore | Compare side by side | `#compare` |
+| 14 | 04 / Explore | How it looks (desktops) | `#desktops` |
+| 15 | 04 / Explore | How updates work | `#release-models` |
+| 16 | 05 / Switch | How to switch, step by step | `#switch` |
+| 17 | 05 / Switch | FAQ | `#faq` |
+| 18 | 05 / Switch | Glossary | `#glossary` |
+| 19 | 05 / Switch | Help, sources, footer | `#help` |
+
+Each chapter starts with a thin rule and a mono chapter label. The old three-switch finder and the hero "What matters to you?" pills are merged into **Find your fit**.
 
 **The section pattern (every section):** a plain-language opening that is always visible (eyebrow, h2, "In short" lead paragraph in `body-lg`), then a **"Show the details"** panel with the technical content. Whether the panel starts open or closed is noted per section in `content/copy.md`.
-
-**Deep-dive divider:** between sections 10 and 11, a quiet flat divider reads: "That's everything you need to get started. Want to go deeper? The rest of the page is for the curious." *(Copy to be added to `copy.md` §11 as its lead-in.)*
 
 ---|---|---|---|
 | 1 | Header / sticky index | — | Navigation, theme toggle |
